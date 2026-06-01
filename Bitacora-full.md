@@ -140,11 +140,24 @@ Creamos "os_utils.py", este archivo es un tipo "ayudante" que se encarga de hace
 
 
 ## Paso 3 - Módulo LOG (Analizar intentos fallidos de SSH)
-
-Cuando se complete el push, estaremos listos para meterle mano a la **Opción 3** de tu menú. 
-
 Como buen Sysadmin, tu misión ahora será crear un script que abra un archivo de registro de un servidor (`auth.log`) y busque de forma automática cuántas veces ha intentado entrar un hacker (o un usuario despistado) poniendo mal la contraseña por SSH. 
 
+El Contexto: ¿Qué es el archivo auth.log?
+    Cuando un servidor Linux está conectado a internet, miles de hackers (y bots automatizados) intentan atacarlo constantemente a través de un protocolo llamado SSH (que sirve para controlar el servidor a distancia).
 
+    Cada vez que alguien intenta entrar a tu servidor y falla porque pone mal el usuario o la contraseña, el sistema operativo de Linux (como Ubuntu o Debian) lo anota discretamente en un diario de texto llamado auth.log (Registro de Autenticación).
 
-   
+    Un archivo auth.log real puede tener millones de líneas. Ejemplos:
+        Plaintext
+            Jun 01 12:34:56 servidor sshd[12345]: Failed password for invalid user admin from 192.168.1.50 port 54321 ssh2
+            Jun 01 12:35:10 servidor sshd[12345]: Failed password for root from 203.0.113.5 port 39210 ssh2
+            Jun 01 12:36:02 servidor sshd[12345]: Accepted password for dani from 192.168.1.15 port 51200 ssh2
+
+El obejetivo
+    Nuestra Misión:
+    Como no podemos leer millones de líneas a mano, vamos a programar un analizador automático que:
+
+        1. Abra y lea ese archivo de registro.
+        2. Busque las palabras clave Failed password (Contraseña fallida).
+        3. Extraiga automáticamente la dirección IP del atacante y el nombre de usuario que intentaron robar (como root o admin).
+        4. Cuente cuántas veces ha atacado cada IP para que podamos bloquear a los más pesados.

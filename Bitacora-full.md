@@ -1,4 +1,19 @@
 # Fase 7
+En este Proyecto (Taskflow-7)
+Tener un entorno virtual (en este caso venv) es obligatorio y crucial por tres razones muy potentes:
+
+1. El "Supervisor Estricto" (mypy)
+Para este proyecto necesitas usar mypy, que es una herramienta que revisa que tu código no tenga errores de lógica antes de ejecutarlo. mypy no viene dentro de Python por defecto. Al instalarlo dentro de tu "venv", te aseguras de que el corrector analiza únicamente los archivos de tu proyecto y no se vuelve loco revisando carpetas de tu sistema operativo.
+
+2. El test. O la "Lista de la Compra" (requirements.txt)
+Cuando termine el proyecto, tu profesor o cualquier otra persona querrá probar tu código. Si hubieras instalado las herramientas en tu ordenador de forma global, tu archivo requirements.txt tendría una lista gigante con 200 programas que tienes instalados desde hace meses.
+Al usar un venv, cuando haces pip freeze > requirements.txt, el archivo se genera limpio, conteniendo únicamente lo que tu proyecto necesita para funcionar (como mypy). Así, el profesor solo tendrá que escribir un comando para clonar tu entorno exacto.
+
+3. El **.gitignore** con GitHub y OneDrive
+Como el entorno virtual genera miles de pequeños archivos internos para que Python funcione en segundo plano. Al tenerlos todos agrupados dentro de la carpeta venv, le pudimos decir al archivo .gitignore: "Oye, no subas esto a internet
+
+**En resumen**: Python es el motor, y el entorno virtual (venv) es la caja protectora que evita que los experimentos de tu proyecto salpiquen y estropeen tu ordenador, asegurando además que cualquiera pueda ejecutar tu código en el futuro exactamente igual que tú.
+
 
 ## Paso 1: Setup del Entorno y Menú CLI Estricto
 Vamos a preparar el terreno en tu máquina para que la estructura del código sea modular y profesional desde el primer minuto.
@@ -62,10 +77,45 @@ El Entorno Virtual (venv)
             .pytest_cache/
             .mypy_cache/
 
-### 1.3. Creamos el Código Base con Type Hints (Tipado Estricto)
+### 1.3. Creamos el Código "Menu Base" con Type Hints (Tipado Estricto)
 Creamos el esqueleto del menú interactivo (el panel de control). Los Type Hints son etiquetas que le ponemos a las funciones para avisar qué tipo de datos entran y salen (por ejemplo, decir que una variable va a ser de tipo texto str o que una función no devuelve nada None).
 
 Incluimos el Type Hints estrictos (como None o str) para que mypy no nos llame la atención.
 
-    Creamos el archivo src/sys_toolkit.py:
+Creamos el archivo: src/sys_toolkit.py
    
+
+## Paso 2. Módulo OS - Automatización del Sistema
+Creamos "os_utils.py", este archivo es un tipo "ayudante" que se encarga de hacer el trabajo sucio.
+
+- Paso 2.1. Creamos el archivo "ayudante":  src/os_utils.py
+
+### La perspectiva del Programador: ¿Por qué creamos os_utils.py?
+    1. El Principio de Responsabilidad Única (Clean Code)
+    "Un archivo debe encargarse de una sola cosa".
+
+    El archivo "sys_toolkit.py" tiene la única misión de interactuar con el usuario (mostrar texto, leer el teclado, UN MENU para abreviar). No tiene por qué saber cómo se calcula un byte en un disco duro o cómo se envía un paquete de red. Por eso, creo un archivo "ayudante" independiente (os_utils.py) especializado en interactuar con el Sistema Operativo. Si el día de mañana el comando de Windows para el Ping cambia, solo tengo que arreglarlo en os_utils.py sin romper mi menú principal.
+
+    2. El porqué de las librerías nativas (subprocess y shutil)
+    Las herramientas de Python:
+
+        # subprocess: Abre una pequeña "compuerta" invisible hacia la terminal de tu Windows real, ejecuta el comando ping clásico que tú escribirías a mano, captura lo que responde la máquina y nos lo devuelve en forma de texto de Python.
+
+        # shutil: Es una librería experta en el sistema de archivos. Le pregunta directamente al disco duro cuánto espacio total tiene y cuánto le queda disponible.
+
+    3. La rigidez de los Type Hints (Para que MyPy no nos grite)
+    Las salidas deben utilizar Tuple (Tuplas), esto evita que las funciones devuelvan datos al azar.
+
+        # run_ping devuelve una tupla Tuple[bool, str]. El bool (Verdadero/Falso) le dice al menú si la web está viva para que pinte un emoji verde ✅ o rojo ❌. El str contiene el texto técnico del ping por si queremos examinarlo.
+
+        # check_disk_storage devuelve Tuple[float, float, float, bool]. Tres números decimales con los Gigabytes exactos y un último booleano que actúa como un disparador de alarmas si el espacio cae por debajo del 20%.
+
+- Paso 2.2: Modificar el menú
+    1. Pasamos a "conectar" los archivos. Un archivo no sabe que el otro existe hasta que no los conectas. Por eso, en la parte superior del menú (sys_toolkit.py), debemos introducir la "importacion".
+        Python
+        from os_utils import run_ping, check_disk_storage
+
+    2. Tambien, debemos incluir la acción dentro del bucle (Donde pulsas las opciones)
+    Tenemos que cambiar los antiguos mensajes de "pendiente" por el código real que le pide los datos al ayudante.
+
+- Paso 2.3: Verificación

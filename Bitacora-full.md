@@ -119,3 +119,32 @@ Creamos "os_utils.py", este archivo es un tipo "ayudante" que se encarga de hace
     Tenemos que cambiar los antiguos mensajes de "pendiente" por el código real que le pide los datos al ayudante.
 
 - Paso 2.3: Verificación
+
+    Paso 1: La prueba real (Ejecutar el programa)
+    Vamos a ver si Windows y tu Python se comunican bien. En la terminal (donde ya tienes el (.venv) activo), ejecutamos el programa con este comando:
+        PowerShell
+        python src/sys_toolkit.py
+
+    Ver docs/"pruebas menu python" de python src/sys_toolkit.py.
+
+
+    Paso 2: El último control antes de guardar: MyPy
+    La tarea exige que el código cumpla con el tipado estricto sin errores ocultos, vamos a pasar un supervisor de calidad.
+
+    Escribimos este comando en la terminal:
+        "mypy src/os_utils.py src/sys_toolkit.py"
+    Resultado:
+        "(.venv) PS C:\Users\danie\OneDrive\Desktop\docs-josu-PC3-dani\JOSU0131\taskflow-7> mypy src/os_utils.py src/sys_toolkit.py
+        Success: no issues found in 2 source files"
+    Significa que tu código no solo funciona de maravilla, sino que además es robusto, limpio y cumple al 100% con las reglas más estrictas de Python
+
+
+## Paso 3 - Módulo LOG (Analizar intentos fallidos de SSH)
+
+Cuando se complete el push, estaremos listos para meterle mano a la **Opción 3** de tu menú. 
+
+Como buen Sysadmin, tu misión ahora será crear un script que abra un archivo de registro de un servidor (`auth.log`) y busque de forma automática cuántas veces ha intentado entrar un hacker (o un usuario despistado) poniendo mal la contraseña por SSH. 
+
+
+
+   

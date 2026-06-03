@@ -1,6 +1,7 @@
 import sys
 # Importamos las funciones del módulo "os_utils" que acabamos de crear
 from os_utils import run_ping, check_disk_storage
+from log_utils import parse_ssh_failures  # <-- Añadimos esta línea nueva
 
 def show_menu() -> None:
     """Imprime el menú interactivo en la consola."""
@@ -47,7 +48,28 @@ f"[i] Lanzando ping a {ip}...")
                     print("✅ Estado del disco: Óptimo (Suficiente espacio libre).")
                     
             elif choice == "3":
-                print("\n[!] Opción 3 seleccionada (Módulo Log pendiente...)")
+                print("\n[i] Analizando intentos fallidos de SSH en logs/auth.log...")
+                ruta_log: str = "logs/auth.log"
+                
+                # Llamamos al ayudante para que procese el archivo
+                ataques, mapa_ips = parse_ssh_failures(ruta_log)
+                
+                if not ataques:
+                    print("✅ No se detectaron intentos fallidos de inicio de sesión o el archivo está vacío.")
+                else:
+                    print(f"\n🚨 ¡SE DETECTARON {len(ataques)} INTENTOS DE ATAQUE SSH! 🚨")
+                    print("-" * 50)
+                    print("Detalle de los últimos accesos bloqueados:")
+                    for usuario, ip in ataques:
+                        print(f" 💀 IP: {ip.ljust(15)} -> Intentó robar el usuario: [{usuario}]")
+                    
+                    print("-" * 50)
+                    print("Resumen de peligrosidad (Ranking de IPs atacantes):")
+                    for ip, total in mapa_ips.items():
+                        # Si una IP ataca 3 o más veces, le ponemos una alerta roja extra
+                        alerta_nivel = "🔥 (CRÍTICO - Sugerido bloquear en Firewall)" if total >= 3 else "⚠️"
+                        print(f" 📍 {ip.ljust(15)} -> {total} intentos fallidos {alerta_nivel}")
+
             elif choice == "4":
                 print("\n[!] Opción 4 seleccionada (Módulo POO pendiente...)")
             elif choice == "5":

@@ -1,0 +1,6 @@
+Jun 01 10:00:01 server sshd[111]: Failed password for invalid user admin from 192.168.1.100 port 49152 ssh2
+Jun 01 10:01:15 server sshd[112]: Failed password for root from 203.0.113.5 port 38211 ssh2
+Jun 01 10:02:03 server sshd[113]: Accepted password for dani from 192.168.1.15 port 52100 ssh2
+Jun 01 10:03:42 server sshd[114]: Failed password for root from 203.0.113.5 port 38215 ssh2
+Jun 01 10:05:12 server sshd[115]: Failed password for invalid user guest from 198.51.100.2 port 51122 ssh2
+Jun 01 10:06:01 server sshd[116]: Failed password for root from 203.0.113.5 port 38220 ssh2

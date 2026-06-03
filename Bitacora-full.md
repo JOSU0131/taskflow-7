@@ -153,11 +153,44 @@ El Contexto: ¿Qué es el archivo auth.log?
             Jun 01 12:35:10 servidor sshd[12345]: Failed password for root from 203.0.113.5 port 39210 ssh2
             Jun 01 12:36:02 servidor sshd[12345]: Accepted password for dani from 192.168.1.15 port 51200 ssh2
 
-El obejetivo
-    Nuestra Misión:
+El objetivo:
     Como no podemos leer millones de líneas a mano, vamos a programar un analizador automático que:
-
         1. Abra y lea ese archivo de registro.
         2. Busque las palabras clave Failed password (Contraseña fallida).
         3. Extraiga automáticamente la dirección IP del atacante y el nombre de usuario que intentaron robar (como root o admin).
         4. Cuente cuántas veces ha atacado cada IP para que podamos bloquear a los más pesados.
+
+### 3.1 
+    1. Activar la terminal
+    Asegúrate de que al abrir tu VS Code, abajo en la terminal te aparezca el (.venv)
+
+    2. Crear el archivo simulado de Logs
+    Como estamosprogramando en Windows y no en un servidor Linux real con ataques en directo, tenemos que "fabricar" un archivo auth.log de prueba para que nuestro programa tenga algo que leer.
+        - Creamos una carpeta llamada "logs". Dentro de esa carpeta, crea un archivo llamado auth.log.
+        - Y creamos registros que simulan ataques reales
+
+    3. Crear el archivo "ayudante"
+    Ahora toca programar la maquinaria inteligente que se va a encargar de devorar ese archivo de texto y extraer los datos valiosos.
+
+    Para este módulo vamos a usar una herramienta súper potente en la informática llamada Expresiones Regulares (Regex, un patrón inteligente para cazar textos específicos dentro de un mar de letras).
+        - Creamos un archivo nuevo llamado exactamente: log_utils.py, dentro de la carpeta src
+        - Dentro tenemos que escribir codigo que lea un archivo auth.log y extrae los intentos fallidos de SSH.
+            Y nos devuelva
+            - Una lista de tuplas con (usuario, IP) de cada ataque.
+            - Un diccionario con el conteo de ataques por IP: { "IP": cantidad_de_ataques }
+            - - -
+
+    4. Conectar el ayudante a tu menú principal de Python (src/sys_toolkit.py)
+    Ahora tenemos que abrir el archivo del menú para decirle que cuando el usuario pulse el 3, use un nuevo código.
+        - Primero abrimos src/sys_toolkit.py.
+        - Añadimos código de import:
+            from log_utils import parse_ssh_failures  # <-- Añadimos esta línea nueva
+        - Y en la opcion "3" elif choice=="3":, hay que añadir un analizador  de intentos fallidos de SSH en logs/auth.log, con un "if not ataques" y un "else".
+        - Probamos el sistema y la opción "3".
+            Esperamos:      
+            Resumen de peligrosidad (Ranking de IPs atacantes):
+            📍 192.168.1.100   -> 1 intentos fallidos ⚠️
+            📍 203.0.113.5     -> 3 intentos fallidos 🔥 (CRÍTICO - Sugerido bloquear en Firewall)
+            📍 198.51.100.2    -> 1 intentos fallidos ⚠️
+        - Chequeamos el examen del supervisor:z
+            "mypy src/log_utils.py src/sys_toolkit.py"

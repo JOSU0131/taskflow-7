@@ -333,7 +333,7 @@ La librería Pandas es una herramienta de potencia industrial que nos permitirá
         - Un booleano indicando el éxito de la operación.
         - Un texto con el resumen estadístico de los datos procesados.
     
-3. Conectar Pandas al menú principal (src/sys_toolkit.py)
+#### 3. Conectar Pandas al menú principal (src/sys_toolkit.py)
     1. En el archivo src/sys_toolkit.py
     2. Añadimos la linea de codigo para hacer el import.
         Python
@@ -374,3 +374,8 @@ La librería Pandas es una herramienta de potencia industrial que nos permitirá
         mypy src/data_utils.py src/sys_toolkit.py
         Y nos sale el mensaje esperado:
         "Success: no issues found in 2 source files"
+
+4. Actualizar el archivo de dependencias final
+    Como instalamos requests y pandas, tenemos que asegurarnos de que queden registradas en tu "lista de la compra" oficial del proyecto para que tu profesor pueda instalarlo todo de un solo golpe. Ejecuta este comando:
+        PowerShell
+        pip freeze > requirements.txt   

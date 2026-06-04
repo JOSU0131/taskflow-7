@@ -3,6 +3,7 @@ import sys
 from os_utils import run_ping, check_disk_storage
 from log_utils import parse_ssh_failures  # <-- Añadimos esta línea nueva
 from net_utils import get_mock_inventory  # <-- Módulo POO
+from api_utils import get_ip_geolocation  # <-- Módulo API
 
 def show_menu() -> None:
     """Imprime el menú interactivo en la consola."""
@@ -88,7 +89,27 @@ f"[i] Lanzando ping a {ip}...")
                 print("✅ Auditoría completada con éxito. Estructura de clases validada.")
 
             elif choice == "5":
-                print("\n[!] Opción 5 seleccionada (Módulo API pendiente...)")
+                print("\n🌐 [Módulo API] Consultar Geolocalización de IP sospechosa")
+                ip_sospechosa = input("Introduce la IP que deseas investigar (ej: 8.8.8.8 o la del atacante): ").strip()
+                
+                if not ip_sospechosa:
+                    print("❌ No has introducido ninguna IP.")
+                else:
+                    print(f"[i] Conectando con la API de geolocalización para investigar {ip_sospechosa}...")
+                    exito, info = get_ip_geolocation(ip_sospechosa)
+                    
+                    print("=" * 50)
+                    if exito:
+                        print(f"🌍 REPORTES DE UBICACIÓN PARA LA IP: {ip_sospechosa}")
+                        print("-" * 50)
+                        print(f" 🏳️ País:     {info.get('country')}")
+                        print(f" 🏙️ Ciudad:   {info.get('city')}")
+                        print(f" 🏢 Proveedor: {info.get('isp')}")
+                        print(f" 📍 Coordenadas: Latitud {info.get('lat')} | Longitud {info.get('lon')}")
+                    else:
+                        print(f"❌ Error al consultar la IP: {info.get('error')}")
+                    print("=" * 50)
+
             elif choice == "6":
                 print("\n[!] Opción 6 seleccionada (Módulo Pandas pendiente...)")
             elif choice == "0":

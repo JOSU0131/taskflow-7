@@ -212,12 +212,12 @@ Contexto:
 
         3. Clase Hija (RouterDevice): Otro molde especializado. Hereda los datos básicos, pero tiene algo exclusivo de los routers: el número de puertos e interfaces de red que está gestionando.
 
-### Paso 1: Crear el archivo ayudante "src/net_utils.py"
+### Paso 4.1: Crear el archivo ayudante "src/net_utils.py"
 Vamos a construir el ecosistema de objetos.
     1. En la carpeta src/ en VS Code. Creamos un archivo nuevo llamado exactamente: net_utils.py
     2. Necesitaremos código sobre "class NetworkDevice, ServerDevice(NetworkDevice), RouterDevice(NetworkDevice), y un def get_mock_inventory() -> List[NetworkDevice]:"
 
-### Paso 2: Conectar la POO a nuestro menú principal (src/sys_toolkit.py)
+### Paso 4.2: Conectar la POO a nuestro menú principal (src/sys_toolkit.py)
 Ahora vamos a hacer que el menú sea capaz de leer esta lista de objetos y procesarlos uno a uno (lo que en programación llamamos Polimorfismo: el menú llamará a get_details() y cada objeto sabrá responder con sus datos exclusivos de forma inteligente).
     1. En nuestro archivo "menu" de python, src/sys_toolkit.py.
     2. Debemos incluir la nueva linea de código para la importación:
@@ -225,7 +225,8 @@ Ahora vamos a hacer que el menú sea capaz de leer esta lista de objetos y proce
         from net_utils import get_mock_inventory  # <-- Añadimos esta línea nueva
     3. Y tendremos que editar la función de la opción "4" con un codigo para que inicie la "Iniciando Auditoría de Dispositivos de Red (POO)"
     4. Ahora hay que testear los objetos (la opcion "4"):
-    **RECUERDA** para iniciar python primero encender sistema virtual (.venv) y luego en terminal "python src/sys_toolkit.py"
+
+    **RECUERDA** para iniciar python primero encender sistema virtual (.venv) y luego escribiremos en la terminal: "python src/sys_toolkit.py"
 
     Esperamos: 
         [i] Iniciando Auditoría de Dispositivos de Red (POO)...
@@ -241,3 +242,64 @@ Ahora vamos a hacer que el menú sea capaz de leer esta lista de objetos y proce
     5. Salimos del menu (pulsando "0") y vamos a comprobar que la estructura de clases, constructores (__init__) y el uso de super() sean perfectos para el tipado estricto.
         PowerShell
          "mypy src/net_utils.py src/sys_toolkit.py"
+    - - -
+
+## Paso 5: El Módulo API (Consultar Geolocalización de IP sospechosa)
+En este paso vamos a programar para que deje de trabajar de forma "aislada" dentro del PC y lo conectaremos a internet en tiempo real para pedirle datos a un servidor externo.
+
+El Contexto: 
+    Una API (Application Programming Interface), es como una "ventanilla de información" que una web abre para que otros programas puedan hablar con ella de forma automática.
+
+    En el "Paso 3" descubrimos que la IP 203.0.113.5 estaba intentando atacar nuestro sistema, pero nos falta información... ¿quién es esa IP? ¿Desde qué parte del mundo nos están atacando?
+
+    En lugar de ir a Google a buscarlo a mano, vamos a hacer que tu script use la librería requests para conectarse a una API pública y gratuita de geolocalización (ip-api.com). Le enviaremos una IP y su servidor nos devolverá al instante un paquete de datos (en formato JSON) diciéndonos el país, la ciudad, la compañía de internet (ISP) y hasta las coordenadas geográficas del atacante.
+
+### Paso 5.1: Instalar la librería externa requests
+Para este paso necesitamos una herramienta para poder conectarnos a internet (ya que por defecto esta función no viene dentro de Python). 
+    1. Necesitamos instalar la librería con el comando:
+        PowerShell
+        pip install requests
+
+    2. Creamos el archivo ayudante src/"api_utils.py". En este programaremos mediante código la conexión a la API de ip-api.com para obtener la geolocalización de una IP. Y que nos devuelve:
+        - Un booleano (True si la consulta fue exitosa).
+        - Un diccionario con los datos de respuesta (país, ciudad, isp, etc.).
+
+    3. Conectar la API al menú principal "sys_toolkit.py"
+        1. En el archivo src/sys_toolkit.py
+        2. Añadimos el import
+        3. Editamos la función de la opción "5"  con un codigo para que "[Módulo API] Consultar Geolocalización de IP sospechosa"
+
+    4. Ahora hay que testear la conexión externa (la opcion "5"):
+        PowerShell
+        python src/sys_toolkit.py
+
+    Esperamos, al selecionar opción 5:
+        🌐 [Módulo API] Consultar Geolocalización de IP sospechosa
+        Introduce la IP que deseas investigar (ej: 8.8.8.8 o la del atacante): 203.0.113.5
+        [i] Conectando con la API de geolocalización para investigar 203.0.113.5...
+        ==================================================
+        🌍 REPORTES DE UBICACIÓN PARA LA IP: 203.0.113.5
+        --------------------------------------------------
+        🏳️ País:     China
+        🏙️ Ciudad:   Beijing
+        🏢 Proveedor: China Telecom
+        📍 Coordenadas: Latitud 39.9042 | Longitud 116.4074
+        ==================================================
+
+    Y al volver a seleccionar la "5" y introducir una ip como 8.8.8.8:
+        🌐 [Módulo API] Consultar Geolocalización de IP sospechosa
+        Introduce la IP que deseas investigar (ej: 8.8.8.8 o la del atacante): 8.8.8.8
+        [i] Conectando con la API de geolocalización para investigar 8.8.8.8...
+        ==================================================
+        🌍 REPORTES DE UBICACIÓN PARA LA IP: 8.8.8.8
+        --------------------------------------------------
+        🏳️ País:     United States
+        🏙️ Ciudad:   Ashburn
+        🏢 Proveedor: Google LLC
+        📍 Coordenadas: Latitud 39.03 | Longitud -77.5
+        ==================================================
+
+    5. Control de tipado de MyPy"
+    Al introducir la librería externa requests, es vital comprobar que el supervisor de calidad siga estando contento con la lógica del código y los tipos de datos que maneja la API.
+        PowerShell
+        mypy src/api_utils.py src/sys_toolkit.py

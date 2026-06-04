@@ -2,6 +2,7 @@ import sys
 # Importamos las funciones del módulo "os_utils" que acabamos de crear
 from os_utils import run_ping, check_disk_storage
 from log_utils import parse_ssh_failures  # <-- Añadimos esta línea nueva
+from net_utils import get_mock_inventory  # <-- Módulo POO
 
 def show_menu() -> None:
     """Imprime el menú interactivo en la consola."""
@@ -71,7 +72,21 @@ f"[i] Lanzando ping a {ip}...")
                         print(f" 📍 {ip.ljust(15)} -> {total} intentos fallidos {alerta_nivel}")
 
             elif choice == "4":
-                print("\n[!] Opción 4 seleccionada (Módulo POO pendiente...)")
+                print("\n[i] Iniciando Auditoría de Dispositivos de Red (POO)...")
+                
+                # Solicitamos el inventario de objetos reales a nuestro ayudante
+                inventario = get_mock_inventory()
+                
+                print(f"📊 Se han cargado {len(inventario)} dispositivos en la base de datos de auditoría.")
+                print("=" * 60)
+                
+                # Recorremos la lista. Gracias al polimorfismo, cada objeto se dibuja a sí mismo correctamente
+                for dispositivo in inventario:
+                    print(dispositivo.get_details())
+                    
+                print("=" * 60)
+                print("✅ Auditoría completada con éxito. Estructura de clases validada.")
+
             elif choice == "5":
                 print("\n[!] Opción 5 seleccionada (Módulo API pendiente...)")
             elif choice == "6":

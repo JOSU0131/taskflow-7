@@ -140,7 +140,7 @@ Creamos "os_utils.py", este archivo es un tipo "ayudante" que se encarga de hace
 
 
 ## Paso 3 - Módulo LOG (Analizar intentos fallidos de SSH)
-Como buen Sysadmin, tu misión ahora será crear un script que abra un archivo de registro de un servidor (`auth.log`) y busque de forma automática cuántas veces ha intentado entrar un hacker (o un usuario despistado) poniendo mal la contraseña por SSH. 
+Como buen System admin, tu misión ahora será crear un script que abra un archivo de registro de un servidor (`auth.log`) y busque de forma automática cuántas veces ha intentado entrar un hacker (o un usuario despistado) poniendo mal la contraseña por SSH. 
 
 El Contexto: ¿Qué es el archivo auth.log?
     Cuando un servidor Linux está conectado a internet, miles de hackers (y bots automatizados) intentan atacarlo constantemente a través de un protocolo llamado SSH (que sirve para controlar el servidor a distancia).
@@ -194,3 +194,50 @@ El objetivo:
             📍 198.51.100.2    -> 1 intentos fallidos ⚠️
         - Chequeamos el examen del supervisor:z
             "mypy src/log_utils.py src/sys_toolkit.py"
+        - - -
+
+## Paso 4: El Módulo de Red con POO (Programación Orientada a Objetos)
+Contexto:
+    En el día a día de una empresa, un Sysadmin no gestiona "textos sueltos", gestiona equipos reales (servidores, routers, switches, ordenadores). En programación, para representar esos equipos de forma ordenada, usamos la "POO".
+
+    Imagina que la POO es como un *plano de fábrica*. 
+    
+    Nuestro objetivo sera, crear los "moldes", llamados "Clases" para definir cómo es un objeto y qué sabe hacer.
+
+    - Primero hay que pensar en una estructura de "Herencia":
+
+        1. Una Clase Base (NetworkDevice): El molde genérico. Todos los aparatos de una red tienen un nombre, una dirección IP y un sistema operativo.
+
+        2. Clase Hija (ServerDevice): Un molde especializado. Hereda todo lo del aparato genérico, pero además tiene cosas exclusivas de servidores, como el número de servicios activos (por ejemplo, si tiene una base de datos web encendida).
+
+        3. Clase Hija (RouterDevice): Otro molde especializado. Hereda los datos básicos, pero tiene algo exclusivo de los routers: el número de puertos e interfaces de red que está gestionando.
+
+### Paso 1: Crear el archivo ayudante "src/net_utils.py"
+Vamos a construir el ecosistema de objetos.
+    1. En la carpeta src/ en VS Code. Creamos un archivo nuevo llamado exactamente: net_utils.py
+    2. Necesitaremos código sobre "class NetworkDevice, ServerDevice(NetworkDevice), RouterDevice(NetworkDevice), y un def get_mock_inventory() -> List[NetworkDevice]:"
+
+### Paso 2: Conectar la POO a nuestro menú principal (src/sys_toolkit.py)
+Ahora vamos a hacer que el menú sea capaz de leer esta lista de objetos y procesarlos uno a uno (lo que en programación llamamos Polimorfismo: el menú llamará a get_details() y cada objeto sabrá responder con sus datos exclusivos de forma inteligente).
+    1. En nuestro archivo "menu" de python, src/sys_toolkit.py.
+    2. Debemos incluir la nueva linea de código para la importación:
+        Python
+        from net_utils import get_mock_inventory  # <-- Añadimos esta línea nueva
+    3. Y tendremos que editar la función de la opción "4" con un codigo para que inicie la "Iniciando Auditoría de Dispositivos de Red (POO)"
+    4. Ahora hay que testear los objetos (la opcion "4"):
+    **RECUERDA** para iniciar python primero encender sistema virtual (.venv) y luego en terminal "python src/sys_toolkit.py"
+
+    Esperamos: 
+        [i] Iniciando Auditoría de Dispositivos de Red (POO)...
+        📊 Se han cargado 4 dispositivos en la base de datos de auditoría.
+        ============================================================
+        🖥️  [srv-produccion-01] IP: 10.0.0.10 | SO: Ubuntu Server 22.04 | 💼 Servicios Activos: 5
+        🖥️  [rtr-core-central] IP: 10.0.0.1 | SO: Cisco IOS | 🔌 Puertos Totales: 24
+        🖥️  [srv-backup-datos] IP: 10.0.0.20 | SO: Debian 12 | 💼 Servicios Activos: 2
+        🖥️  [rtr-oficina-b] IP: 192.168.1.1 | SO: MikroTik RouterOS | 🔌 Puertos Totales: 8
+        ============================================================
+        ✅ Auditoría completada con éxito. Estructura de clases validada.
+        - - -
+    5. Salimos del menu (pulsando "0") y vamos a comprobar que la estructura de clases, constructores (__init__) y el uso de super() sean perfectos para el tipado estricto.
+        PowerShell
+         "mypy src/net_utils.py src/sys_toolkit.py"

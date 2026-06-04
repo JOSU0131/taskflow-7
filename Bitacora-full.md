@@ -266,7 +266,9 @@ Para este paso necesitamos una herramienta para poder conectarnos a internet (ya
 
     3. Conectar la API al menú principal "sys_toolkit.py"
         1. En el archivo src/sys_toolkit.py
-        2. Añadimos el import
+        2. Añadimos la linea de codigo para hacer el import.
+            Python
+            from api_utils import get_ip_geolocation  # <-- Módulo API
         3. Editamos la función de la opción "5"  con un codigo para que "[Módulo API] Consultar Geolocalización de IP sospechosa"
 
     4. Ahora hay que testear la conexión externa (la opcion "5"):
@@ -299,7 +301,76 @@ Para este paso necesitamos una herramienta para poder conectarnos a internet (ya
         📍 Coordenadas: Latitud 39.03 | Longitud -77.5
         ==================================================
 
-    5. Control de tipado de MyPy"
+    5. Control de tipado de MyPy:
     Al introducir la librería externa requests, es vital comprobar que el supervisor de calidad siga estando contento con la lógica del código y los tipos de datos que maneja la API.
         PowerShell
         mypy src/api_utils.py src/sys_toolkit.py
+    - - -
+
+## Paso 6: Módulo DATA (Generar e importar inventario masivo con Pandas, OpenPyXL y Faker)
+
+Contexto: ¿Por qué usa un System admin la librería Pandas?
+En una empresa real, auditar 4 dispositivos a mano como hicimos en el paso de la "POO" está bien, pero... ¿y si la empresa tiene 10,000 servidores? Un administrador de sistemas no los leerá uno a uno en la pantalla de la terminal.
+
+Estos informes contienen datos masivos y se suelen gestionar en hojas de cálculo (archivos CSV o Excel).
+
+### Paso 6.1: Instalar la librería externa (pandas)
+La librería Pandas es una herramienta de potencia industrial que nos permitirá:
+
+    - Crear tablas de datos masivos (llamadas DataFrames) en memoria en milisegundos.
+    - Exportar miles de filas directamente a un archivo físico .csv limpio para pasárselo a los jefes.
+    - Importar y leer ese archivo al instante, permitiéndonos filtrar información (por ejemplo, buscar solo los servidores caídos o los dispositivos de una marca concreta).
+
+1. Instalamos la herrmaienta Pandas.
+        PowerShell
+        pip install pandas
+
+2. Creamos el archivo "ayudante": data_utils.py
+    En la carpeta src, creamos el archivo nuevo llamado: "data_utils.py".
+    En este progamaremos un código que, genere un inventario masivo de dispositivos en un DataFrame de Pandas,
+        lo exporta a un archivo CSV y luego demuestra cómo leerlo y analizarlo.
+        Devuelve:
+        - Un booleano indicando el éxito de la operación.
+        - Un texto con el resumen estadístico de los datos procesados.
+    
+3. Conectar Pandas al menú principal (src/sys_toolkit.py)
+    1. En el archivo src/sys_toolkit.py
+    2. Añadimos la linea de codigo para hacer el import.
+        Python
+        from data_utils import process_massive_inventory
+    3. Editamos la función de la opción "6"  con un codigo para que "[Módulo DATA] Iniciando procesador masivo de inventarios con Pandas... ruta_csv: str = "data/inventario_masivo.csv"
+
+    4. Ahora hay que testear rl código de la opcion "6":
+        PowerShell
+        python src/sys_toolkit.py
+
+    Esperamos, al selecionar opción 6:
+        🐼 [Módulo DATA] Iniciando procesador masivo de inventarios con Pandas...
+    =================================================================
+    ✅ ¡Archivo CSV masivo generado con éxito en: data/inventario_masivo.csv!
+    📊 Resumen del análisis de datos con Pandas:
+    🏢 Total de dispositivos inventariados: 100 equipos.
+    🧠 Capacidad promedio de memoria RAM: 42.72 GB.
+    🛠️  Desglose por estado de operación:
+        - Activos: 50
+        - En Mantenimiento: 25
+        - Inactivos: 25
+    =================================================================
+
+    5. Control de tipado de MyPy:
+    Vamos a comprobar que la integración con la librería Pandas cumpla con el tipado estricto. Salimos del programa con la opción "0" y ejecutamos en la terminal (.venv):
+        PowerShell
+        mypy src/data_utils.py src/sys_toolkit.py
+    
+    Nos sale el error:
+    "src\data_utils.py:2: error: Library stubs not installed for "pandas""
+
+    Debemos instalar un paquete extra de Pandas. Este necesita un paquete complementario (las llamadas "etiquetas de tipo" o stubs) para saber exactamente qué tipo de datos entra y sale de cada función de Pandas.
+    - 1. Instalamos las etiquetas de Pandas
+        PowerShell
+        pip install pandas-stubs
+    - 2. Volvemos a probar el Mypy:
+        PowerShell
+        mypy src/data_utils.py src/sys_toolkit.py
+        Y nos sale el mensaje esperado:
+        "Success: no issues found in 2 source files"

@@ -4,6 +4,7 @@ from os_utils import run_ping, check_disk_storage
 from log_utils import parse_ssh_failures  # <-- Añadimos esta línea nueva
 from net_utils import get_mock_inventory  # <-- Módulo POO
 from api_utils import get_ip_geolocation  # <-- Módulo API
+from data_utils import process_massive_inventory  # <-- Módulo Pandas
 
 def show_menu() -> None:
     """Imprime el menú interactivo en la consola."""
@@ -111,7 +112,16 @@ f"[i] Lanzando ping a {ip}...")
                     print("=" * 50)
 
             elif choice == "6":
-                print("\n[!] Opción 6 seleccionada (Módulo Pandas pendiente...)")
+                print("\n🐼 [Módulo DATA] Iniciando procesador masivo de inventarios con Pandas...")
+                ruta_csv: str = "data/inventario_masivo.csv"
+                
+                # Ejecutamos el motor de Pandas de nuestro ayudante
+                exito, resultado_reporte = process_massive_inventory(ruta_csv)
+                
+                print("=" * 65)
+                print(resultado_reporte)
+                print("=" * 65)
+
             elif choice == "0":
                 print("\n👋 Saliendo del Toolkit. ¡Buen día, Sysadmin!")
                 sys.exit(0)

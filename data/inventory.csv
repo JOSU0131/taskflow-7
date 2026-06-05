@@ -1,0 +1,1001 @@
+ID,Hostname,SO,RAM_GB,Departamento
+SRV-0001,wish-win,Ubuntu Server 22.04,4,Operaciones
+SRV-0002,according-win,RedHat RHEL 9,2,Desarrollo
+SRV-0003,college-win,Debian 12,32,Desarrollo
+SRV-0004,American-win,Windows Server 2022,4,RRHH
+SRV-0005,Mrs-win,RedHat RHEL 9,128,Desarrollo
+SRV-0006,material-win,Windows Server 2022,64,RRHH
+SRV-0007,soldier-win,Windows Server 2019,2,Operaciones
+SRV-0008,hard-win,Windows Server 2022,2,RRHH
+SRV-0009,factor-win,Ubuntu Server 22.04,8,IT
+SRV-0010,share-win,Windows Server 2019,16,Desarrollo
+SRV-0011,option-win,Debian 12,32,IT
+SRV-0012,student-win,Windows Server 2022,4,Operaciones
+SRV-0013,trade-win,Ubuntu Server 22.04,128,Finanzas
+SRV-0014,middle-win,Debian 12,32,Seguridad
+SRV-0015,provide-win,Windows Server 2019,8,Finanzas
+SRV-0016,out-win,Debian 12,128,IT
+SRV-0017,set-win,Ubuntu Server 22.04,2,Operaciones
+SRV-0018,four-win,Debian 12,4,RRHH
+SRV-0019,answer-win,Windows Server 2019,4,IT
+SRV-0020,total-win,Ubuntu Server 22.04,8,Finanzas
+SRV-0021,discussion-win,Ubuntu Server 22.04,2,Seguridad
+SRV-0022,decide-win,Ubuntu Server 22.04,128,Desarrollo
+SRV-0023,public-win,Windows Server 2022,32,RRHH
+SRV-0024,her-win,Windows Server 2019,16,RRHH
+SRV-0025,second-win,Windows Server 2022,4,Operaciones
+SRV-0026,church-win,Debian 12,4,Finanzas
+SRV-0027,owner-win,Windows Server 2019,16,Operaciones
+SRV-0028,expert-win,Debian 12,16,Desarrollo
+SRV-0029,happen-win,Debian 12,8,RRHH
+SRV-0030,whose-win,RedHat RHEL 9,8,Operaciones
+SRV-0031,good-win,Windows Server 2019,128,Seguridad
+SRV-0032,recent-win,RedHat RHEL 9,16,RRHH
+SRV-0033,start-win,Windows Server 2019,16,IT
+SRV-0034,radio-win,Windows Server 2019,128,RRHH
+SRV-0035,interest-win,RedHat RHEL 9,4,Operaciones
+SRV-0036,of-win,Ubuntu Server 22.04,64,Seguridad
+SRV-0037,which-win,Windows Server 2019,8,Desarrollo
+SRV-0038,wide-win,RedHat RHEL 9,8,Seguridad
+SRV-0039,like-win,RedHat RHEL 9,2,Desarrollo
+SRV-0040,such-win,RedHat RHEL 9,8,RRHH
+SRV-0041,listen-win,Windows Server 2022,64,Operaciones
+SRV-0042,well-win,Debian 12,4,Finanzas
+SRV-0043,fly-win,Windows Server 2022,32,Desarrollo
+SRV-0044,accept-win,Debian 12,2,IT
+SRV-0045,provide-win,Ubuntu Server 22.04,2,Desarrollo
+SRV-0046,million-win,RedHat RHEL 9,64,Desarrollo
+SRV-0047,almost-win,Windows Server 2022,8,Finanzas
+SRV-0048,hotel-win,Windows Server 2022,2,Operaciones
+SRV-0049,matter-win,Debian 12,128,Desarrollo
+SRV-0050,garden-win,Debian 12,2,Operaciones
+SRV-0051,of-win,Ubuntu Server 22.04,8,Finanzas
+SRV-0052,light-win,Debian 12,64,Finanzas
+SRV-0053,school-win,Windows Server 2022,16,RRHH
+SRV-0054,week-win,Debian 12,16,RRHH
+SRV-0055,hair-win,Ubuntu Server 22.04,8,Finanzas
+SRV-0056,look-win,RedHat RHEL 9,32,Finanzas
+SRV-0057,support-win,Windows Server 2022,16,Desarrollo
+SRV-0058,check-win,Windows Server 2022,128,RRHH
+SRV-0059,almost-win,Windows Server 2019,32,Desarrollo
+SRV-0060,able-win,Ubuntu Server 22.04,8,Seguridad
+SRV-0061,sure-win,Debian 12,8,Finanzas
+SRV-0062,lay-win,Windows Server 2019,8,Finanzas
+SRV-0063,walk-win,RedHat RHEL 9,16,Seguridad
+SRV-0064,million-win,Windows Server 2019,32,Seguridad
+SRV-0065,star-win,Debian 12,16,RRHH
+SRV-0066,voice-win,Windows Server 2019,64,IT
+SRV-0067,news-win,Debian 12,16,IT
+SRV-0068,attorney-win,Windows Server 2019,128,IT
+SRV-0069,them-win,Ubuntu Server 22.04,2,Finanzas
+SRV-0070,middle-win,Debian 12,32,Finanzas
+SRV-0071,oil-win,Windows Server 2022,64,IT
+SRV-0072,nation-win,Ubuntu Server 22.04,32,Finanzas
+SRV-0073,seek-win,Debian 12,8,Desarrollo
+SRV-0074,concern-win,Ubuntu Server 22.04,64,Seguridad
+SRV-0075,open-win,Windows Server 2022,64,IT
+SRV-0076,six-win,RedHat RHEL 9,16,IT
+SRV-0077,camera-win,RedHat RHEL 9,128,Desarrollo
+SRV-0078,skin-win,Debian 12,32,IT
+SRV-0079,word-win,RedHat RHEL 9,2,IT
+SRV-0080,leave-win,Windows Server 2022,16,Desarrollo
+SRV-0081,certain-win,Debian 12,32,Finanzas
+SRV-0082,remember-win,Debian 12,128,IT
+SRV-0083,care-win,Windows Server 2019,16,Finanzas
+SRV-0084,prove-win,Debian 12,2,RRHH
+SRV-0085,necessary-win,Windows Server 2022,4,Finanzas
+SRV-0086,in-win,Debian 12,16,RRHH
+SRV-0087,girl-win,Debian 12,128,Finanzas
+SRV-0088,interesting-win,RedHat RHEL 9,2,IT
+SRV-0089,long-win,Debian 12,128,RRHH
+SRV-0090,deal-win,Ubuntu Server 22.04,2,Desarrollo
+SRV-0091,dream-win,Debian 12,128,Seguridad
+SRV-0092,throughout-win,Ubuntu Server 22.04,8,Finanzas
+SRV-0093,set-win,Windows Server 2022,64,RRHH
+SRV-0094,hit-win,Windows Server 2022,4,IT
+SRV-0095,building-win,Ubuntu Server 22.04,128,Operaciones
+SRV-0096,a-win,Ubuntu Server 22.04,32,Seguridad
+SRV-0097,lawyer-win,Ubuntu Server 22.04,64,Finanzas
+SRV-0098,option-win,Debian 12,128,IT
+SRV-0099,risk-win,Windows Server 2022,4,RRHH
+SRV-0100,music-win,Windows Server 2019,64,Operaciones
+SRV-0101,little-win,Windows Server 2019,128,IT
+SRV-0102,remember-win,Ubuntu Server 22.04,16,RRHH
+SRV-0103,star-win,RedHat RHEL 9,128,Seguridad
+SRV-0104,site-win,Windows Server 2019,16,Operaciones
+SRV-0105,several-win,Debian 12,16,Seguridad
+SRV-0106,likely-win,Windows Server 2022,32,IT
+SRV-0107,much-win,Windows Server 2022,16,IT
+SRV-0108,item-win,Ubuntu Server 22.04,64,RRHH
+SRV-0109,with-win,Ubuntu Server 22.04,32,Operaciones
+SRV-0110,friend-win,Ubuntu Server 22.04,4,Desarrollo
+SRV-0111,talk-win,RedHat RHEL 9,128,Seguridad
+SRV-0112,law-win,Debian 12,32,Finanzas
+SRV-0113,find-win,RedHat RHEL 9,2,RRHH
+SRV-0114,listen-win,RedHat RHEL 9,16,Operaciones
+SRV-0115,sport-win,Debian 12,2,Finanzas
+SRV-0116,wait-win,Windows Server 2022,64,Seguridad
+SRV-0117,foreign-win,Debian 12,4,Finanzas
+SRV-0118,court-win,Windows Server 2019,2,IT
+SRV-0119,walk-win,Windows Server 2022,32,Operaciones
+SRV-0120,possible-win,Windows Server 2019,2,Operaciones
+SRV-0121,source-win,Ubuntu Server 22.04,64,RRHH
+SRV-0122,cost-win,Ubuntu Server 22.04,128,Desarrollo
+SRV-0123,look-win,Windows Server 2022,32,IT
+SRV-0124,chance-win,Debian 12,16,Seguridad
+SRV-0125,last-win,RedHat RHEL 9,64,RRHH
+SRV-0126,protect-win,Windows Server 2022,8,Finanzas
+SRV-0127,church-win,Debian 12,32,Seguridad
+SRV-0128,though-win,Ubuntu Server 22.04,8,Operaciones
+SRV-0129,laugh-win,RedHat RHEL 9,4,RRHH
+SRV-0130,meeting-win,Windows Server 2022,128,Finanzas
+SRV-0131,sea-win,Debian 12,4,Finanzas
+SRV-0132,white-win,Debian 12,4,Desarrollo
+SRV-0133,program-win,RedHat RHEL 9,2,IT
+SRV-0134,during-win,Windows Server 2022,64,Desarrollo
+SRV-0135,work-win,Debian 12,8,Seguridad
+SRV-0136,program-win,RedHat RHEL 9,32,Desarrollo
+SRV-0137,then-win,Ubuntu Server 22.04,2,IT
+SRV-0138,service-win,Windows Server 2022,8,Desarrollo
+SRV-0139,cultural-win,RedHat RHEL 9,16,Seguridad
+SRV-0140,challenge-win,Ubuntu Server 22.04,2,Finanzas
+SRV-0141,wish-win,Ubuntu Server 22.04,128,IT
+SRV-0142,thus-win,Ubuntu Server 22.04,2,Seguridad
+SRV-0143,run-win,Windows Server 2022,16,Operaciones
+SRV-0144,near-win,RedHat RHEL 9,2,RRHH
+SRV-0145,surface-win,Debian 12,2,RRHH
+SRV-0146,fear-win,Ubuntu Server 22.04,32,RRHH
+SRV-0147,away-win,Ubuntu Server 22.04,8,RRHH
+SRV-0148,institution-win,Windows Server 2022,2,Finanzas
+SRV-0149,build-win,Windows Server 2022,8,IT
+SRV-0150,similar-win,Windows Server 2019,16,IT
+SRV-0151,own-win,Windows Server 2019,128,Finanzas
+SRV-0152,measure-win,Debian 12,128,Seguridad
+SRV-0153,parent-win,RedHat RHEL 9,2,Finanzas
+SRV-0154,we-win,Ubuntu Server 22.04,8,IT
+SRV-0155,recently-win,Ubuntu Server 22.04,16,Operaciones
+SRV-0156,important-win,Windows Server 2022,16,RRHH
+SRV-0157,together-win,Debian 12,32,RRHH
+SRV-0158,here-win,Debian 12,8,Desarrollo
+SRV-0159,knowledge-win,Debian 12,2,Finanzas
+SRV-0160,image-win,Ubuntu Server 22.04,2,RRHH
+SRV-0161,plant-win,RedHat RHEL 9,4,Desarrollo
+SRV-0162,house-win,Debian 12,4,Desarrollo
+SRV-0163,others-win,RedHat RHEL 9,16,Operaciones
+SRV-0164,unit-win,Ubuntu Server 22.04,8,Operaciones
+SRV-0165,must-win,Debian 12,128,Seguridad
+SRV-0166,rest-win,RedHat RHEL 9,128,Seguridad
+SRV-0167,environment-win,Ubuntu Server 22.04,128,Desarrollo
+SRV-0168,mind-win,Windows Server 2022,64,IT
+SRV-0169,everyone-win,Ubuntu Server 22.04,128,IT
+SRV-0170,bring-win,Windows Server 2022,16,Operaciones
+SRV-0171,sea-win,RedHat RHEL 9,128,RRHH
+SRV-0172,even-win,RedHat RHEL 9,32,Desarrollo
+SRV-0173,number-win,RedHat RHEL 9,64,RRHH
+SRV-0174,big-win,Windows Server 2019,16,RRHH
+SRV-0175,eat-win,Windows Server 2022,32,IT
+SRV-0176,drug-win,RedHat RHEL 9,8,RRHH
+SRV-0177,short-win,Debian 12,32,IT
+SRV-0178,energy-win,RedHat RHEL 9,32,RRHH
+SRV-0179,machine-win,Debian 12,64,Desarrollo
+SRV-0180,arm-win,Ubuntu Server 22.04,4,Finanzas
+SRV-0181,agreement-win,Debian 12,4,Desarrollo
+SRV-0182,suggest-win,Debian 12,4,RRHH
+SRV-0183,example-win,Windows Server 2019,32,Desarrollo
+SRV-0184,ten-win,Windows Server 2022,4,Seguridad
+SRV-0185,last-win,Windows Server 2022,128,IT
+SRV-0186,few-win,Ubuntu Server 22.04,2,RRHH
+SRV-0187,remember-win,Ubuntu Server 22.04,16,IT
+SRV-0188,amount-win,Debian 12,4,RRHH
+SRV-0189,production-win,Ubuntu Server 22.04,32,Seguridad
+SRV-0190,true-win,Windows Server 2022,32,Seguridad
+SRV-0191,prevent-win,Windows Server 2019,8,RRHH
+SRV-0192,sound-win,Ubuntu Server 22.04,128,Finanzas
+SRV-0193,election-win,Debian 12,2,Operaciones
+SRV-0194,guess-win,Ubuntu Server 22.04,4,Operaciones
+SRV-0195,then-win,Debian 12,16,Seguridad
+SRV-0196,speak-win,Ubuntu Server 22.04,32,RRHH
+SRV-0197,talk-win,Windows Server 2019,8,Operaciones
+SRV-0198,case-win,RedHat RHEL 9,2,IT
+SRV-0199,early-win,Windows Server 2019,32,IT
+SRV-0200,thing-win,Windows Server 2022,4,Desarrollo
+SRV-0201,follow-win,Ubuntu Server 22.04,16,Seguridad
+SRV-0202,international-win,RedHat RHEL 9,16,Operaciones
+SRV-0203,citizen-win,Debian 12,16,Finanzas
+SRV-0204,social-win,RedHat RHEL 9,2,Seguridad
+SRV-0205,memory-win,Windows Server 2019,4,IT
+SRV-0206,line-win,RedHat RHEL 9,128,Seguridad
+SRV-0207,fill-win,Windows Server 2022,128,Finanzas
+SRV-0208,prevent-win,RedHat RHEL 9,32,Finanzas
+SRV-0209,should-win,Windows Server 2019,4,IT
+SRV-0210,green-win,Ubuntu Server 22.04,64,Operaciones
+SRV-0211,one-win,Windows Server 2022,128,Operaciones
+SRV-0212,call-win,Windows Server 2019,2,Seguridad
+SRV-0213,method-win,Windows Server 2019,4,Finanzas
+SRV-0214,on-win,Ubuntu Server 22.04,2,Operaciones
+SRV-0215,plan-win,Windows Server 2022,16,Finanzas
+SRV-0216,budget-win,RedHat RHEL 9,128,Finanzas
+SRV-0217,voice-win,Windows Server 2019,16,IT
+SRV-0218,control-win,RedHat RHEL 9,2,Finanzas
+SRV-0219,health-win,Ubuntu Server 22.04,128,Seguridad
+SRV-0220,summer-win,Windows Server 2019,64,RRHH
+SRV-0221,under-win,Debian 12,16,RRHH
+SRV-0222,indeed-win,Debian 12,128,Finanzas
+SRV-0223,stuff-win,Ubuntu Server 22.04,4,Seguridad
+SRV-0224,alone-win,RedHat RHEL 9,16,RRHH
+SRV-0225,we-win,Ubuntu Server 22.04,2,Finanzas
+SRV-0226,stuff-win,Debian 12,8,Seguridad
+SRV-0227,two-win,Debian 12,32,Desarrollo
+SRV-0228,threat-win,Windows Server 2022,16,Operaciones
+SRV-0229,wait-win,Windows Server 2022,8,Finanzas
+SRV-0230,traditional-win,Windows Server 2022,128,RRHH
+SRV-0231,choice-win,Ubuntu Server 22.04,4,Operaciones
+SRV-0232,her-win,Debian 12,32,IT
+SRV-0233,yet-win,Debian 12,8,Operaciones
+SRV-0234,ask-win,RedHat RHEL 9,4,RRHH
+SRV-0235,lose-win,Ubuntu Server 22.04,4,RRHH
+SRV-0236,recognize-win,Debian 12,128,RRHH
+SRV-0237,stage-win,RedHat RHEL 9,128,Desarrollo
+SRV-0238,meet-win,Debian 12,2,Finanzas
+SRV-0239,discover-win,RedHat RHEL 9,64,RRHH
+SRV-0240,six-win,RedHat RHEL 9,64,IT
+SRV-0241,more-win,Ubuntu Server 22.04,4,IT
+SRV-0242,fine-win,Windows Server 2019,4,Finanzas
+SRV-0243,defense-win,RedHat RHEL 9,32,Desarrollo
+SRV-0244,thought-win,RedHat RHEL 9,64,RRHH
+SRV-0245,call-win,Windows Server 2019,128,Operaciones
+SRV-0246,character-win,RedHat RHEL 9,32,RRHH
+SRV-0247,heart-win,Ubuntu Server 22.04,64,Finanzas
+SRV-0248,road-win,Windows Server 2019,32,Seguridad
+SRV-0249,prove-win,Ubuntu Server 22.04,16,Desarrollo
+SRV-0250,season-win,Windows Server 2022,8,Finanzas
+SRV-0251,thought-win,RedHat RHEL 9,128,IT
+SRV-0252,decide-win,Ubuntu Server 22.04,4,Desarrollo
+SRV-0253,two-win,RedHat RHEL 9,2,Operaciones
+SRV-0254,three-win,Windows Server 2019,4,Operaciones
+SRV-0255,local-win,Windows Server 2019,64,Operaciones
+SRV-0256,certain-win,Windows Server 2022,128,IT
+SRV-0257,girl-win,Debian 12,32,RRHH
+SRV-0258,analysis-win,RedHat RHEL 9,8,Desarrollo
+SRV-0259,today-win,Debian 12,8,Finanzas
+SRV-0260,trip-win,Windows Server 2022,2,Operaciones
+SRV-0261,control-win,RedHat RHEL 9,8,RRHH
+SRV-0262,strategy-win,Windows Server 2022,4,IT
+SRV-0263,road-win,Windows Server 2022,128,IT
+SRV-0264,similar-win,Windows Server 2019,128,Seguridad
+SRV-0265,ground-win,RedHat RHEL 9,64,Seguridad
+SRV-0266,leader-win,Windows Server 2019,8,Finanzas
+SRV-0267,fly-win,Windows Server 2022,4,Seguridad
+SRV-0268,population-win,Windows Server 2019,32,Desarrollo
+SRV-0269,line-win,Windows Server 2022,2,Desarrollo
+SRV-0270,nearly-win,Windows Server 2022,8,Finanzas
+SRV-0271,cover-win,Ubuntu Server 22.04,8,Seguridad
+SRV-0272,above-win,RedHat RHEL 9,8,RRHH
+SRV-0273,yet-win,RedHat RHEL 9,2,Seguridad
+SRV-0274,skin-win,Ubuntu Server 22.04,128,Finanzas
+SRV-0275,discussion-win,Windows Server 2022,128,Operaciones
+SRV-0276,anything-win,Ubuntu Server 22.04,2,Desarrollo
+SRV-0277,country-win,Ubuntu Server 22.04,2,RRHH
+SRV-0278,yeah-win,Windows Server 2019,128,RRHH
+SRV-0279,would-win,RedHat RHEL 9,8,Operaciones
+SRV-0280,until-win,Debian 12,32,Seguridad
+SRV-0281,statement-win,Windows Server 2019,32,RRHH
+SRV-0282,put-win,Debian 12,16,Seguridad
+SRV-0283,single-win,Ubuntu Server 22.04,128,Seguridad
+SRV-0284,yes-win,Debian 12,4,Finanzas
+SRV-0285,history-win,Ubuntu Server 22.04,2,Operaciones
+SRV-0286,huge-win,RedHat RHEL 9,32,Finanzas
+SRV-0287,clear-win,Ubuntu Server 22.04,4,RRHH
+SRV-0288,fall-win,Ubuntu Server 22.04,2,IT
+SRV-0289,western-win,Windows Server 2019,4,Finanzas
+SRV-0290,air-win,Windows Server 2022,32,Operaciones
+SRV-0291,financial-win,RedHat RHEL 9,32,Seguridad
+SRV-0292,beautiful-win,Windows Server 2019,64,Finanzas
+SRV-0293,probably-win,Windows Server 2019,8,Desarrollo
+SRV-0294,assume-win,Windows Server 2019,2,Finanzas
+SRV-0295,energy-win,Debian 12,16,Seguridad
+SRV-0296,approach-win,Windows Server 2022,16,Desarrollo
+SRV-0297,quickly-win,Windows Server 2019,2,Desarrollo
+SRV-0298,four-win,Debian 12,4,Operaciones
+SRV-0299,leave-win,Windows Server 2022,8,Finanzas
+SRV-0300,nothing-win,Ubuntu Server 22.04,32,IT
+SRV-0301,nature-win,Ubuntu Server 22.04,2,RRHH
+SRV-0302,recognize-win,Ubuntu Server 22.04,4,Operaciones
+SRV-0303,memory-win,Windows Server 2022,128,Operaciones
+SRV-0304,where-win,RedHat RHEL 9,16,Desarrollo
+SRV-0305,city-win,Ubuntu Server 22.04,8,Finanzas
+SRV-0306,whole-win,Windows Server 2019,4,IT
+SRV-0307,pressure-win,Windows Server 2019,128,IT
+SRV-0308,future-win,Windows Server 2022,8,Desarrollo
+SRV-0309,across-win,Windows Server 2019,2,Finanzas
+SRV-0310,all-win,RedHat RHEL 9,2,Seguridad
+SRV-0311,wife-win,RedHat RHEL 9,64,Seguridad
+SRV-0312,cold-win,Debian 12,16,IT
+SRV-0313,often-win,Windows Server 2022,16,Desarrollo
+SRV-0314,computer-win,Windows Server 2019,32,RRHH
+SRV-0315,green-win,Windows Server 2022,16,Finanzas
+SRV-0316,before-win,Windows Server 2022,4,Finanzas
+SRV-0317,information-win,RedHat RHEL 9,4,Desarrollo
+SRV-0318,father-win,Debian 12,64,Desarrollo
+SRV-0319,recent-win,Ubuntu Server 22.04,8,Operaciones
+SRV-0320,work-win,Debian 12,128,RRHH
+SRV-0321,her-win,Debian 12,64,Seguridad
+SRV-0322,example-win,Windows Server 2022,8,Finanzas
+SRV-0323,through-win,Ubuntu Server 22.04,2,Operaciones
+SRV-0324,effort-win,Windows Server 2019,4,RRHH
+SRV-0325,ground-win,RedHat RHEL 9,8,Seguridad
+SRV-0326,pick-win,Windows Server 2022,64,IT
+SRV-0327,expect-win,Windows Server 2019,128,IT
+SRV-0328,again-win,Debian 12,128,RRHH
+SRV-0329,day-win,RedHat RHEL 9,2,Operaciones
+SRV-0330,heart-win,RedHat RHEL 9,2,Finanzas
+SRV-0331,different-win,Ubuntu Server 22.04,32,RRHH
+SRV-0332,arrive-win,RedHat RHEL 9,32,Finanzas
+SRV-0333,you-win,RedHat RHEL 9,4,Seguridad
+SRV-0334,war-win,Debian 12,32,Seguridad
+SRV-0335,hand-win,Windows Server 2022,2,IT
+SRV-0336,education-win,Windows Server 2019,4,RRHH
+SRV-0337,one-win,Windows Server 2022,2,Finanzas
+SRV-0338,manager-win,Windows Server 2022,32,IT
+SRV-0339,million-win,Debian 12,32,RRHH
+SRV-0340,stop-win,RedHat RHEL 9,64,Operaciones
+SRV-0341,speak-win,Windows Server 2019,2,Seguridad
+SRV-0342,per-win,Debian 12,8,Finanzas
+SRV-0343,involve-win,RedHat RHEL 9,16,Finanzas
+SRV-0344,eye-win,Debian 12,64,IT
+SRV-0345,along-win,Ubuntu Server 22.04,128,Desarrollo
+SRV-0346,certainly-win,Windows Server 2022,32,IT
+SRV-0347,success-win,Windows Server 2022,4,Desarrollo
+SRV-0348,artist-win,Windows Server 2019,128,Finanzas
+SRV-0349,they-win,RedHat RHEL 9,8,Seguridad
+SRV-0350,allow-win,Windows Server 2019,16,Desarrollo
+SRV-0351,authority-win,RedHat RHEL 9,16,IT
+SRV-0352,country-win,Ubuntu Server 22.04,32,RRHH
+SRV-0353,seven-win,Debian 12,4,Desarrollo
+SRV-0354,throughout-win,Ubuntu Server 22.04,64,RRHH
+SRV-0355,experience-win,RedHat RHEL 9,128,Seguridad
+SRV-0356,either-win,Windows Server 2022,64,Seguridad
+SRV-0357,until-win,Debian 12,2,IT
+SRV-0358,stuff-win,Debian 12,2,RRHH
+SRV-0359,site-win,Windows Server 2019,8,Finanzas
+SRV-0360,go-win,RedHat RHEL 9,32,IT
+SRV-0361,must-win,RedHat RHEL 9,128,RRHH
+SRV-0362,increase-win,Windows Server 2019,32,Finanzas
+SRV-0363,seat-win,Ubuntu Server 22.04,8,IT
+SRV-0364,place-win,Ubuntu Server 22.04,4,RRHH
+SRV-0365,true-win,Ubuntu Server 22.04,4,Seguridad
+SRV-0366,ground-win,Ubuntu Server 22.04,2,IT
+SRV-0367,walk-win,RedHat RHEL 9,8,IT
+SRV-0368,sell-win,Debian 12,4,Operaciones
+SRV-0369,find-win,Ubuntu Server 22.04,16,Operaciones
+SRV-0370,accept-win,Windows Server 2022,32,Operaciones
+SRV-0371,small-win,Debian 12,64,Seguridad
+SRV-0372,billion-win,RedHat RHEL 9,4,Seguridad
+SRV-0373,eye-win,Windows Server 2022,16,Desarrollo
+SRV-0374,coach-win,Windows Server 2019,128,RRHH
+SRV-0375,five-win,RedHat RHEL 9,4,Seguridad
+SRV-0376,do-win,Windows Server 2022,32,Operaciones
+SRV-0377,decision-win,RedHat RHEL 9,16,Seguridad
+SRV-0378,believe-win,Windows Server 2019,4,Operaciones
+SRV-0379,high-win,Windows Server 2022,64,Operaciones
+SRV-0380,order-win,Windows Server 2022,8,Operaciones
+SRV-0381,scene-win,Windows Server 2022,16,RRHH
+SRV-0382,argue-win,RedHat RHEL 9,8,IT
+SRV-0383,history-win,Windows Server 2019,32,Finanzas
+SRV-0384,explain-win,Debian 12,128,RRHH
+SRV-0385,beyond-win,RedHat RHEL 9,32,IT
+SRV-0386,four-win,Debian 12,16,RRHH
+SRV-0387,trip-win,RedHat RHEL 9,128,Seguridad
+SRV-0388,need-win,Debian 12,4,Finanzas
+SRV-0389,your-win,Ubuntu Server 22.04,16,Seguridad
+SRV-0390,organization-win,Debian 12,64,Desarrollo
+SRV-0391,new-win,Debian 12,2,RRHH
+SRV-0392,as-win,Windows Server 2019,128,Seguridad
+SRV-0393,own-win,Debian 12,128,RRHH
+SRV-0394,administration-win,Debian 12,2,RRHH
+SRV-0395,PM-win,Windows Server 2022,4,RRHH
+SRV-0396,friend-win,RedHat RHEL 9,4,Operaciones
+SRV-0397,involve-win,Ubuntu Server 22.04,2,Seguridad
+SRV-0398,always-win,RedHat RHEL 9,16,RRHH
+SRV-0399,series-win,RedHat RHEL 9,8,Operaciones
+SRV-0400,rest-win,RedHat RHEL 9,128,IT
+SRV-0401,score-win,Windows Server 2022,32,Desarrollo
+SRV-0402,last-win,Windows Server 2019,32,RRHH
+SRV-0403,series-win,RedHat RHEL 9,32,RRHH
+SRV-0404,participant-win,Debian 12,16,Desarrollo
+SRV-0405,term-win,Windows Server 2022,128,RRHH
+SRV-0406,through-win,Ubuntu Server 22.04,16,Desarrollo
+SRV-0407,sport-win,Debian 12,32,IT
+SRV-0408,specific-win,Windows Server 2022,4,Operaciones
+SRV-0409,garden-win,RedHat RHEL 9,4,Operaciones
+SRV-0410,realize-win,Windows Server 2022,16,IT
+SRV-0411,every-win,Ubuntu Server 22.04,4,Seguridad
+SRV-0412,play-win,Windows Server 2019,2,RRHH
+SRV-0413,sing-win,Windows Server 2022,64,Seguridad
+SRV-0414,court-win,Windows Server 2019,8,Finanzas
+SRV-0415,force-win,Ubuntu Server 22.04,4,Seguridad
+SRV-0416,still-win,Debian 12,4,Operaciones
+SRV-0417,kitchen-win,Debian 12,4,Seguridad
+SRV-0418,ten-win,RedHat RHEL 9,8,Finanzas
+SRV-0419,meet-win,RedHat RHEL 9,16,RRHH
+SRV-0420,travel-win,Windows Server 2022,16,Seguridad
+SRV-0421,leader-win,RedHat RHEL 9,2,Desarrollo
+SRV-0422,environment-win,RedHat RHEL 9,8,Operaciones
+SRV-0423,cut-win,Ubuntu Server 22.04,2,RRHH
+SRV-0424,low-win,Debian 12,4,Operaciones
+SRV-0425,attention-win,RedHat RHEL 9,4,RRHH
+SRV-0426,fine-win,RedHat RHEL 9,2,Finanzas
+SRV-0427,sea-win,Windows Server 2022,2,Operaciones
+SRV-0428,long-win,Ubuntu Server 22.04,8,Finanzas
+SRV-0429,control-win,Debian 12,4,Finanzas
+SRV-0430,tonight-win,Windows Server 2022,64,RRHH
+SRV-0431,general-win,Debian 12,32,IT
+SRV-0432,mouth-win,Debian 12,32,Desarrollo
+SRV-0433,be-win,Windows Server 2019,2,Desarrollo
+SRV-0434,board-win,Debian 12,4,RRHH
+SRV-0435,bring-win,RedHat RHEL 9,64,Desarrollo
+SRV-0436,my-win,Windows Server 2019,32,RRHH
+SRV-0437,American-win,RedHat RHEL 9,64,Finanzas
+SRV-0438,cost-win,Windows Server 2019,64,Finanzas
+SRV-0439,no-win,Ubuntu Server 22.04,2,Desarrollo
+SRV-0440,wrong-win,RedHat RHEL 9,64,Desarrollo
+SRV-0441,debate-win,Windows Server 2019,4,RRHH
+SRV-0442,former-win,Windows Server 2022,64,Operaciones
+SRV-0443,state-win,Windows Server 2022,16,IT
+SRV-0444,black-win,Debian 12,8,RRHH
+SRV-0445,produce-win,Windows Server 2019,64,Desarrollo
+SRV-0446,himself-win,Windows Server 2022,8,Operaciones
+SRV-0447,without-win,Ubuntu Server 22.04,128,Operaciones
+SRV-0448,last-win,RedHat RHEL 9,2,Seguridad
+SRV-0449,purpose-win,RedHat RHEL 9,8,Desarrollo
+SRV-0450,degree-win,Windows Server 2022,8,Seguridad
+SRV-0451,item-win,RedHat RHEL 9,64,RRHH
+SRV-0452,present-win,Windows Server 2022,32,Finanzas
+SRV-0453,old-win,Windows Server 2022,64,RRHH
+SRV-0454,recent-win,Ubuntu Server 22.04,64,Desarrollo
+SRV-0455,it-win,Debian 12,4,IT
+SRV-0456,direction-win,Windows Server 2022,16,Seguridad
+SRV-0457,easy-win,Windows Server 2019,128,IT
+SRV-0458,item-win,Ubuntu Server 22.04,4,RRHH
+SRV-0459,next-win,Windows Server 2022,32,RRHH
+SRV-0460,all-win,Ubuntu Server 22.04,64,RRHH
+SRV-0461,control-win,RedHat RHEL 9,128,Desarrollo
+SRV-0462,trip-win,Windows Server 2019,4,IT
+SRV-0463,man-win,Windows Server 2019,4,Operaciones
+SRV-0464,simply-win,Ubuntu Server 22.04,128,IT
+SRV-0465,too-win,Windows Server 2019,32,RRHH
+SRV-0466,dog-win,Windows Server 2019,128,Finanzas
+SRV-0467,power-win,Ubuntu Server 22.04,4,RRHH
+SRV-0468,account-win,RedHat RHEL 9,64,Finanzas
+SRV-0469,set-win,Windows Server 2022,64,RRHH
+SRV-0470,think-win,Windows Server 2022,2,Operaciones
+SRV-0471,campaign-win,Windows Server 2019,128,Seguridad
+SRV-0472,several-win,Windows Server 2019,16,IT
+SRV-0473,truth-win,Windows Server 2022,2,Seguridad
+SRV-0474,account-win,Windows Server 2022,16,Desarrollo
+SRV-0475,can-win,Windows Server 2022,64,Seguridad
+SRV-0476,whatever-win,Windows Server 2019,64,RRHH
+SRV-0477,analysis-win,Windows Server 2022,2,RRHH
+SRV-0478,social-win,Ubuntu Server 22.04,64,Seguridad
+SRV-0479,left-win,Ubuntu Server 22.04,4,RRHH
+SRV-0480,culture-win,Windows Server 2019,8,IT
+SRV-0481,front-win,Debian 12,64,Seguridad
+SRV-0482,develop-win,Windows Server 2019,32,Seguridad
+SRV-0483,live-win,Ubuntu Server 22.04,8,Finanzas
+SRV-0484,top-win,Debian 12,4,Desarrollo
+SRV-0485,give-win,Windows Server 2019,4,Seguridad
+SRV-0486,herself-win,RedHat RHEL 9,64,IT
+SRV-0487,during-win,Ubuntu Server 22.04,16,Finanzas
+SRV-0488,end-win,Ubuntu Server 22.04,64,RRHH
+SRV-0489,almost-win,Debian 12,32,RRHH
+SRV-0490,shake-win,Ubuntu Server 22.04,16,RRHH
+SRV-0491,floor-win,Debian 12,2,IT
+SRV-0492,lot-win,Ubuntu Server 22.04,64,IT
+SRV-0493,draw-win,Ubuntu Server 22.04,2,Operaciones
+SRV-0494,campaign-win,Windows Server 2022,64,Seguridad
+SRV-0495,soldier-win,Windows Server 2022,4,Operaciones
+SRV-0496,may-win,RedHat RHEL 9,8,Desarrollo
+SRV-0497,bed-win,Debian 12,8,Seguridad
+SRV-0498,sound-win,RedHat RHEL 9,32,Operaciones
+SRV-0499,skill-win,Debian 12,8,IT
+SRV-0500,often-win,Ubuntu Server 22.04,4,Desarrollo
+SRV-0501,idea-win,Debian 12,16,Operaciones
+SRV-0502,new-win,Windows Server 2019,4,Operaciones
+SRV-0503,ever-win,Ubuntu Server 22.04,8,Seguridad
+SRV-0504,go-win,Windows Server 2019,4,Finanzas
+SRV-0505,also-win,Ubuntu Server 22.04,128,RRHH
+SRV-0506,stuff-win,Windows Server 2022,32,Desarrollo
+SRV-0507,player-win,RedHat RHEL 9,128,Seguridad
+SRV-0508,art-win,Debian 12,64,Finanzas
+SRV-0509,involve-win,Windows Server 2019,64,Finanzas
+SRV-0510,as-win,Windows Server 2022,2,Seguridad
+SRV-0511,or-win,Windows Server 2022,8,Finanzas
+SRV-0512,stand-win,Windows Server 2019,2,Finanzas
+SRV-0513,language-win,Windows Server 2019,8,Operaciones
+SRV-0514,car-win,Debian 12,64,Desarrollo
+SRV-0515,set-win,Ubuntu Server 22.04,64,IT
+SRV-0516,choice-win,Windows Server 2019,4,RRHH
+SRV-0517,forget-win,Windows Server 2019,4,Seguridad
+SRV-0518,success-win,Windows Server 2019,4,Finanzas
+SRV-0519,fact-win,RedHat RHEL 9,128,Seguridad
+SRV-0520,my-win,Windows Server 2022,16,Finanzas
+SRV-0521,social-win,Windows Server 2022,2,IT
+SRV-0522,attack-win,Ubuntu Server 22.04,64,IT
+SRV-0523,pretty-win,Debian 12,64,Finanzas
+SRV-0524,continue-win,Debian 12,64,IT
+SRV-0525,whether-win,Debian 12,64,Desarrollo
+SRV-0526,fast-win,Windows Server 2022,32,IT
+SRV-0527,market-win,Windows Server 2019,32,Finanzas
+SRV-0528,arrive-win,Ubuntu Server 22.04,2,Finanzas
+SRV-0529,help-win,Windows Server 2022,128,RRHH
+SRV-0530,production-win,Ubuntu Server 22.04,64,Finanzas
+SRV-0531,reveal-win,Windows Server 2022,16,RRHH
+SRV-0532,economy-win,Ubuntu Server 22.04,128,Desarrollo
+SRV-0533,thank-win,Windows Server 2022,64,IT
+SRV-0534,place-win,Ubuntu Server 22.04,32,Desarrollo
+SRV-0535,meet-win,Debian 12,128,Finanzas
+SRV-0536,see-win,RedHat RHEL 9,64,RRHH
+SRV-0537,administration-win,RedHat RHEL 9,64,Operaciones
+SRV-0538,PM-win,RedHat RHEL 9,8,Desarrollo
+SRV-0539,exactly-win,Windows Server 2019,64,Desarrollo
+SRV-0540,despite-win,Debian 12,16,Desarrollo
+SRV-0541,couple-win,Windows Server 2022,4,Finanzas
+SRV-0542,throughout-win,Ubuntu Server 22.04,64,IT
+SRV-0543,once-win,Windows Server 2022,4,RRHH
+SRV-0544,option-win,Ubuntu Server 22.04,64,Finanzas
+SRV-0545,area-win,Debian 12,2,Seguridad
+SRV-0546,account-win,Debian 12,16,RRHH
+SRV-0547,heart-win,Ubuntu Server 22.04,4,Seguridad
+SRV-0548,occur-win,RedHat RHEL 9,64,Seguridad
+SRV-0549,central-win,Debian 12,32,Seguridad
+SRV-0550,security-win,Windows Server 2022,16,RRHH
+SRV-0551,though-win,RedHat RHEL 9,128,Desarrollo
+SRV-0552,head-win,Windows Server 2019,8,Operaciones
+SRV-0553,read-win,RedHat RHEL 9,64,Finanzas
+SRV-0554,sign-win,Debian 12,16,Finanzas
+SRV-0555,interview-win,RedHat RHEL 9,8,Desarrollo
+SRV-0556,kitchen-win,Windows Server 2022,64,Operaciones
+SRV-0557,reveal-win,Windows Server 2022,8,Seguridad
+SRV-0558,camera-win,Debian 12,128,Operaciones
+SRV-0559,debate-win,Ubuntu Server 22.04,16,IT
+SRV-0560,relationship-win,Ubuntu Server 22.04,2,RRHH
+SRV-0561,management-win,Debian 12,16,Operaciones
+SRV-0562,mission-win,Windows Server 2022,4,Seguridad
+SRV-0563,bad-win,Ubuntu Server 22.04,128,Finanzas
+SRV-0564,allow-win,RedHat RHEL 9,8,Seguridad
+SRV-0565,number-win,Windows Server 2019,8,Operaciones
+SRV-0566,lead-win,Ubuntu Server 22.04,2,Desarrollo
+SRV-0567,rock-win,RedHat RHEL 9,64,IT
+SRV-0568,man-win,Windows Server 2022,4,IT
+SRV-0569,affect-win,Ubuntu Server 22.04,2,Operaciones
+SRV-0570,prepare-win,Windows Server 2019,2,Operaciones
+SRV-0571,require-win,Ubuntu Server 22.04,2,Finanzas
+SRV-0572,Republican-win,Debian 12,16,IT
+SRV-0573,travel-win,RedHat RHEL 9,64,Seguridad
+SRV-0574,approach-win,Windows Server 2019,128,RRHH
+SRV-0575,their-win,Ubuntu Server 22.04,8,RRHH
+SRV-0576,certainly-win,Windows Server 2019,64,RRHH
+SRV-0577,American-win,Ubuntu Server 22.04,2,Seguridad
+SRV-0578,listen-win,Windows Server 2019,8,Seguridad
+SRV-0579,behind-win,RedHat RHEL 9,8,IT
+SRV-0580,current-win,Ubuntu Server 22.04,8,Operaciones
+SRV-0581,possible-win,RedHat RHEL 9,2,Seguridad
+SRV-0582,toward-win,RedHat RHEL 9,32,IT
+SRV-0583,stuff-win,RedHat RHEL 9,8,RRHH
+SRV-0584,same-win,Ubuntu Server 22.04,2,Seguridad
+SRV-0585,happen-win,Ubuntu Server 22.04,8,Seguridad
+SRV-0586,drop-win,Ubuntu Server 22.04,128,Desarrollo
+SRV-0587,require-win,RedHat RHEL 9,128,Operaciones
+SRV-0588,shoulder-win,Ubuntu Server 22.04,8,Seguridad
+SRV-0589,reflect-win,Windows Server 2022,8,Seguridad
+SRV-0590,new-win,Debian 12,128,Desarrollo
+SRV-0591,about-win,Windows Server 2022,64,Operaciones
+SRV-0592,yeah-win,Ubuntu Server 22.04,32,Desarrollo
+SRV-0593,card-win,Windows Server 2019,4,RRHH
+SRV-0594,low-win,Windows Server 2019,128,Seguridad
+SRV-0595,positive-win,Ubuntu Server 22.04,32,RRHH
+SRV-0596,machine-win,RedHat RHEL 9,128,RRHH
+SRV-0597,between-win,Ubuntu Server 22.04,4,Desarrollo
+SRV-0598,language-win,Windows Server 2022,64,RRHH
+SRV-0599,measure-win,RedHat RHEL 9,32,Seguridad
+SRV-0600,particularly-win,RedHat RHEL 9,64,RRHH
+SRV-0601,so-win,Windows Server 2022,8,Seguridad
+SRV-0602,act-win,Ubuntu Server 22.04,128,Desarrollo
+SRV-0603,score-win,Ubuntu Server 22.04,16,Operaciones
+SRV-0604,among-win,Ubuntu Server 22.04,16,Desarrollo
+SRV-0605,because-win,Windows Server 2019,32,Desarrollo
+SRV-0606,most-win,Debian 12,128,Operaciones
+SRV-0607,firm-win,Windows Server 2022,128,Finanzas
+SRV-0608,station-win,Ubuntu Server 22.04,128,Operaciones
+SRV-0609,among-win,RedHat RHEL 9,32,Desarrollo
+SRV-0610,effort-win,RedHat RHEL 9,8,Operaciones
+SRV-0611,why-win,Windows Server 2019,16,RRHH
+SRV-0612,lead-win,Ubuntu Server 22.04,4,Desarrollo
+SRV-0613,candidate-win,Windows Server 2022,2,IT
+SRV-0614,use-win,RedHat RHEL 9,128,Seguridad
+SRV-0615,policy-win,Windows Server 2022,2,Finanzas
+SRV-0616,nature-win,Ubuntu Server 22.04,4,IT
+SRV-0617,system-win,Windows Server 2019,4,RRHH
+SRV-0618,then-win,Ubuntu Server 22.04,32,IT
+SRV-0619,project-win,Debian 12,32,Seguridad
+SRV-0620,term-win,Windows Server 2022,128,Operaciones
+SRV-0621,prepare-win,Debian 12,32,Finanzas
+SRV-0622,moment-win,Debian 12,16,Operaciones
+SRV-0623,bar-win,RedHat RHEL 9,128,Operaciones
+SRV-0624,away-win,Ubuntu Server 22.04,64,IT
+SRV-0625,Democrat-win,RedHat RHEL 9,8,Seguridad
+SRV-0626,senior-win,Debian 12,4,Seguridad
+SRV-0627,cup-win,Windows Server 2022,128,IT
+SRV-0628,general-win,RedHat RHEL 9,128,RRHH
+SRV-0629,check-win,Debian 12,32,Desarrollo
+SRV-0630,war-win,Windows Server 2022,64,Seguridad
+SRV-0631,force-win,RedHat RHEL 9,16,RRHH
+SRV-0632,outside-win,Windows Server 2019,2,IT
+SRV-0633,this-win,Windows Server 2019,8,Operaciones
+SRV-0634,give-win,Windows Server 2022,4,Finanzas
+SRV-0635,show-win,Windows Server 2022,128,Desarrollo
+SRV-0636,value-win,Windows Server 2019,32,IT
+SRV-0637,couple-win,Windows Server 2022,4,Finanzas
+SRV-0638,change-win,Windows Server 2019,128,Finanzas
+SRV-0639,ask-win,Windows Server 2022,32,Operaciones
+SRV-0640,like-win,Debian 12,64,Desarrollo
+SRV-0641,reveal-win,RedHat RHEL 9,16,Operaciones
+SRV-0642,down-win,RedHat RHEL 9,4,Seguridad
+SRV-0643,play-win,Debian 12,8,Finanzas
+SRV-0644,else-win,Windows Server 2022,128,Seguridad
+SRV-0645,debate-win,RedHat RHEL 9,128,Desarrollo
+SRV-0646,pass-win,Windows Server 2022,8,Finanzas
+SRV-0647,media-win,RedHat RHEL 9,8,RRHH
+SRV-0648,way-win,Ubuntu Server 22.04,32,Desarrollo
+SRV-0649,official-win,RedHat RHEL 9,8,Desarrollo
+SRV-0650,over-win,Windows Server 2019,8,Finanzas
+SRV-0651,recognize-win,Debian 12,8,Desarrollo
+SRV-0652,home-win,Windows Server 2019,128,Finanzas
+SRV-0653,total-win,Windows Server 2019,4,IT
+SRV-0654,report-win,Windows Server 2019,4,Desarrollo
+SRV-0655,whether-win,Windows Server 2022,128,RRHH
+SRV-0656,together-win,Ubuntu Server 22.04,64,Operaciones
+SRV-0657,employee-win,Windows Server 2022,8,Desarrollo
+SRV-0658,item-win,Windows Server 2022,128,IT
+SRV-0659,personal-win,Ubuntu Server 22.04,16,Desarrollo
+SRV-0660,choice-win,Debian 12,8,Desarrollo
+SRV-0661,popular-win,Ubuntu Server 22.04,16,Finanzas
+SRV-0662,receive-win,Debian 12,8,Seguridad
+SRV-0663,human-win,Ubuntu Server 22.04,16,Seguridad
+SRV-0664,behavior-win,Windows Server 2022,128,IT
+SRV-0665,pay-win,RedHat RHEL 9,2,Seguridad
+SRV-0666,recent-win,Debian 12,64,Seguridad
+SRV-0667,commercial-win,Windows Server 2022,64,Seguridad
+SRV-0668,about-win,Windows Server 2022,16,Finanzas
+SRV-0669,similar-win,Debian 12,128,RRHH
+SRV-0670,recent-win,Ubuntu Server 22.04,16,Desarrollo
+SRV-0671,site-win,Debian 12,32,IT
+SRV-0672,learn-win,Ubuntu Server 22.04,2,Desarrollo
+SRV-0673,now-win,Debian 12,4,Desarrollo
+SRV-0674,maintain-win,RedHat RHEL 9,16,Finanzas
+SRV-0675,southern-win,Ubuntu Server 22.04,16,Finanzas
+SRV-0676,question-win,Windows Server 2019,8,RRHH
+SRV-0677,better-win,Windows Server 2019,8,Operaciones
+SRV-0678,building-win,RedHat RHEL 9,32,IT
+SRV-0679,camera-win,Windows Server 2019,128,RRHH
+SRV-0680,last-win,Debian 12,128,IT
+SRV-0681,arrive-win,Windows Server 2022,128,Finanzas
+SRV-0682,bed-win,RedHat RHEL 9,64,IT
+SRV-0683,third-win,Windows Server 2019,32,Operaciones
+SRV-0684,policy-win,RedHat RHEL 9,8,Operaciones
+SRV-0685,feeling-win,Debian 12,32,Operaciones
+SRV-0686,method-win,Windows Server 2022,64,Seguridad
+SRV-0687,wife-win,RedHat RHEL 9,32,Finanzas
+SRV-0688,but-win,Windows Server 2019,4,Operaciones
+SRV-0689,article-win,Windows Server 2022,32,IT
+SRV-0690,strong-win,RedHat RHEL 9,8,Seguridad
+SRV-0691,maintain-win,Windows Server 2019,32,IT
+SRV-0692,economy-win,Ubuntu Server 22.04,2,Seguridad
+SRV-0693,discuss-win,Ubuntu Server 22.04,16,IT
+SRV-0694,pass-win,RedHat RHEL 9,128,IT
+SRV-0695,up-win,RedHat RHEL 9,4,IT
+SRV-0696,fire-win,Windows Server 2019,2,Operaciones
+SRV-0697,thing-win,Windows Server 2022,128,Operaciones
+SRV-0698,director-win,RedHat RHEL 9,16,IT
+SRV-0699,test-win,Ubuntu Server 22.04,2,Finanzas
+SRV-0700,black-win,Windows Server 2019,4,Desarrollo
+SRV-0701,black-win,Debian 12,32,Operaciones
+SRV-0702,national-win,Ubuntu Server 22.04,2,Desarrollo
+SRV-0703,phone-win,Windows Server 2019,32,IT
+SRV-0704,building-win,Debian 12,64,IT
+SRV-0705,step-win,Windows Server 2022,64,Finanzas
+SRV-0706,civil-win,Windows Server 2022,4,IT
+SRV-0707,wind-win,Ubuntu Server 22.04,4,Finanzas
+SRV-0708,gun-win,Windows Server 2022,128,IT
+SRV-0709,politics-win,Ubuntu Server 22.04,64,Desarrollo
+SRV-0710,concern-win,Ubuntu Server 22.04,64,Desarrollo
+SRV-0711,this-win,Windows Server 2019,32,Operaciones
+SRV-0712,example-win,RedHat RHEL 9,128,RRHH
+SRV-0713,front-win,Windows Server 2019,4,IT
+SRV-0714,baby-win,Windows Server 2019,128,Desarrollo
+SRV-0715,phone-win,Ubuntu Server 22.04,4,RRHH
+SRV-0716,friend-win,RedHat RHEL 9,16,Desarrollo
+SRV-0717,kind-win,RedHat RHEL 9,32,Operaciones
+SRV-0718,produce-win,RedHat RHEL 9,8,RRHH
+SRV-0719,on-win,Debian 12,8,Seguridad
+SRV-0720,fine-win,Ubuntu Server 22.04,128,Operaciones
+SRV-0721,forward-win,Windows Server 2022,128,Finanzas
+SRV-0722,human-win,RedHat RHEL 9,32,RRHH
+SRV-0723,performance-win,Debian 12,64,Seguridad
+SRV-0724,car-win,Windows Server 2019,4,RRHH
+SRV-0725,ahead-win,Windows Server 2019,4,Desarrollo
+SRV-0726,then-win,RedHat RHEL 9,64,Desarrollo
+SRV-0727,remember-win,Debian 12,2,RRHH
+SRV-0728,oil-win,RedHat RHEL 9,4,Operaciones
+SRV-0729,do-win,Windows Server 2022,128,Operaciones
+SRV-0730,time-win,Windows Server 2022,8,RRHH
+SRV-0731,firm-win,Debian 12,128,Seguridad
+SRV-0732,dinner-win,Ubuntu Server 22.04,2,Operaciones
+SRV-0733,she-win,Windows Server 2019,4,IT
+SRV-0734,toward-win,Ubuntu Server 22.04,4,RRHH
+SRV-0735,lawyer-win,Ubuntu Server 22.04,16,IT
+SRV-0736,consider-win,Debian 12,32,Finanzas
+SRV-0737,beyond-win,Debian 12,64,Operaciones
+SRV-0738,game-win,RedHat RHEL 9,2,Finanzas
+SRV-0739,soldier-win,Ubuntu Server 22.04,32,Desarrollo
+SRV-0740,type-win,Ubuntu Server 22.04,4,Operaciones
+SRV-0741,personal-win,Windows Server 2019,8,Seguridad
+SRV-0742,once-win,RedHat RHEL 9,16,RRHH
+SRV-0743,huge-win,Windows Server 2022,8,Operaciones
+SRV-0744,case-win,Ubuntu Server 22.04,4,RRHH
+SRV-0745,him-win,Windows Server 2019,16,Desarrollo
+SRV-0746,interesting-win,Windows Server 2019,2,Operaciones
+SRV-0747,apply-win,RedHat RHEL 9,8,Finanzas
+SRV-0748,professional-win,Debian 12,32,RRHH
+SRV-0749,three-win,Ubuntu Server 22.04,64,RRHH
+SRV-0750,modern-win,Windows Server 2022,128,IT
+SRV-0751,process-win,Windows Server 2019,16,Finanzas
+SRV-0752,middle-win,Windows Server 2022,128,Seguridad
+SRV-0753,maybe-win,Ubuntu Server 22.04,8,Finanzas
+SRV-0754,decade-win,Windows Server 2019,16,Operaciones
+SRV-0755,try-win,RedHat RHEL 9,64,IT
+SRV-0756,sister-win,Windows Server 2022,2,Seguridad
+SRV-0757,give-win,Windows Server 2019,8,IT
+SRV-0758,employee-win,Windows Server 2022,32,Finanzas
+SRV-0759,leave-win,Windows Server 2022,128,Desarrollo
+SRV-0760,town-win,Windows Server 2022,8,Finanzas
+SRV-0761,open-win,RedHat RHEL 9,8,IT
+SRV-0762,either-win,Windows Server 2022,4,RRHH
+SRV-0763,opportunity-win,Ubuntu Server 22.04,4,Desarrollo
+SRV-0764,score-win,Windows Server 2019,4,Operaciones
+SRV-0765,like-win,Windows Server 2019,64,Seguridad
+SRV-0766,population-win,Windows Server 2022,4,Desarrollo
+SRV-0767,professional-win,Windows Server 2019,16,IT
+SRV-0768,past-win,Windows Server 2022,16,Desarrollo
+SRV-0769,school-win,Ubuntu Server 22.04,2,RRHH
+SRV-0770,if-win,Windows Server 2022,8,RRHH
+SRV-0771,tonight-win,Windows Server 2022,32,IT
+SRV-0772,tough-win,Windows Server 2022,64,Seguridad
+SRV-0773,reveal-win,Windows Server 2022,32,Desarrollo
+SRV-0774,single-win,Debian 12,32,Seguridad
+SRV-0775,difference-win,Windows Server 2019,8,Seguridad
+SRV-0776,detail-win,Windows Server 2019,16,Desarrollo
+SRV-0777,determine-win,Windows Server 2022,4,Finanzas
+SRV-0778,standard-win,RedHat RHEL 9,128,Seguridad
+SRV-0779,four-win,Ubuntu Server 22.04,16,Desarrollo
+SRV-0780,central-win,Debian 12,4,Finanzas
+SRV-0781,reduce-win,Debian 12,8,Finanzas
+SRV-0782,require-win,Debian 12,16,RRHH
+SRV-0783,score-win,Windows Server 2022,32,IT
+SRV-0784,share-win,Ubuntu Server 22.04,8,Seguridad
+SRV-0785,pay-win,Windows Server 2022,8,RRHH
+SRV-0786,although-win,Windows Server 2019,8,RRHH
+SRV-0787,indeed-win,Windows Server 2019,8,IT
+SRV-0788,development-win,Windows Server 2019,128,Operaciones
+SRV-0789,reason-win,RedHat RHEL 9,4,Finanzas
+SRV-0790,add-win,Debian 12,2,Seguridad
+SRV-0791,need-win,Windows Server 2022,2,IT
+SRV-0792,to-win,Debian 12,8,Seguridad
+SRV-0793,activity-win,Windows Server 2019,64,Desarrollo
+SRV-0794,almost-win,Windows Server 2019,128,Operaciones
+SRV-0795,today-win,Debian 12,8,RRHH
+SRV-0796,into-win,RedHat RHEL 9,2,Operaciones
+SRV-0797,open-win,RedHat RHEL 9,2,RRHH
+SRV-0798,example-win,Windows Server 2022,128,IT
+SRV-0799,lose-win,RedHat RHEL 9,2,IT
+SRV-0800,section-win,Ubuntu Server 22.04,64,IT
+SRV-0801,capital-win,Windows Server 2022,128,Operaciones
+SRV-0802,fill-win,RedHat RHEL 9,32,Desarrollo
+SRV-0803,should-win,Windows Server 2022,16,Operaciones
+SRV-0804,serious-win,Ubuntu Server 22.04,32,IT
+SRV-0805,before-win,RedHat RHEL 9,32,Desarrollo
+SRV-0806,movement-win,Windows Server 2019,64,Desarrollo
+SRV-0807,door-win,Ubuntu Server 22.04,16,Finanzas
+SRV-0808,value-win,Ubuntu Server 22.04,4,Desarrollo
+SRV-0809,establish-win,Windows Server 2019,16,IT
+SRV-0810,another-win,Ubuntu Server 22.04,32,IT
+SRV-0811,suffer-win,Windows Server 2019,128,Operaciones
+SRV-0812,major-win,Ubuntu Server 22.04,16,IT
+SRV-0813,after-win,Windows Server 2022,8,Seguridad
+SRV-0814,heart-win,Windows Server 2019,64,Operaciones
+SRV-0815,employee-win,Windows Server 2022,128,Operaciones
+SRV-0816,single-win,Windows Server 2022,8,Operaciones
+SRV-0817,particular-win,RedHat RHEL 9,16,IT
+SRV-0818,available-win,Ubuntu Server 22.04,128,IT
+SRV-0819,environmental-win,Ubuntu Server 22.04,8,RRHH
+SRV-0820,activity-win,Windows Server 2019,4,IT
+SRV-0821,heart-win,Windows Server 2019,128,Operaciones
+SRV-0822,middle-win,RedHat RHEL 9,128,Finanzas
+SRV-0823,chance-win,Windows Server 2022,16,Finanzas
+SRV-0824,easy-win,Ubuntu Server 22.04,128,Finanzas
+SRV-0825,growth-win,Windows Server 2019,128,Seguridad
+SRV-0826,street-win,Windows Server 2019,16,Finanzas
+SRV-0827,out-win,RedHat RHEL 9,64,Operaciones
+SRV-0828,company-win,Ubuntu Server 22.04,32,Seguridad
+SRV-0829,apply-win,RedHat RHEL 9,8,Finanzas
+SRV-0830,source-win,Ubuntu Server 22.04,16,Finanzas
+SRV-0831,argue-win,Windows Server 2019,4,IT
+SRV-0832,business-win,Windows Server 2019,16,Operaciones
+SRV-0833,write-win,Windows Server 2022,4,Seguridad
+SRV-0834,offer-win,Debian 12,2,RRHH
+SRV-0835,no-win,RedHat RHEL 9,4,IT
+SRV-0836,national-win,Ubuntu Server 22.04,64,IT
+SRV-0837,into-win,Windows Server 2019,2,IT
+SRV-0838,pressure-win,Windows Server 2022,2,RRHH
+SRV-0839,lay-win,Windows Server 2022,2,Finanzas
+SRV-0840,human-win,Ubuntu Server 22.04,16,Seguridad
+SRV-0841,bit-win,Windows Server 2022,64,Seguridad
+SRV-0842,group-win,Ubuntu Server 22.04,4,RRHH
+SRV-0843,usually-win,Windows Server 2022,4,RRHH
+SRV-0844,movie-win,Ubuntu Server 22.04,16,RRHH
+SRV-0845,system-win,Ubuntu Server 22.04,2,Seguridad
+SRV-0846,defense-win,Ubuntu Server 22.04,8,RRHH
+SRV-0847,catch-win,Ubuntu Server 22.04,128,Finanzas
+SRV-0848,hundred-win,Ubuntu Server 22.04,8,Desarrollo
+SRV-0849,type-win,Windows Server 2019,64,Finanzas
+SRV-0850,our-win,Ubuntu Server 22.04,4,Seguridad
+SRV-0851,style-win,Debian 12,4,Seguridad
+SRV-0852,boy-win,Ubuntu Server 22.04,2,Operaciones
+SRV-0853,task-win,RedHat RHEL 9,4,IT
+SRV-0854,friend-win,Windows Server 2022,4,IT
+SRV-0855,force-win,Windows Server 2022,2,RRHH
+SRV-0856,base-win,Windows Server 2022,32,Seguridad
+SRV-0857,act-win,Debian 12,32,RRHH
+SRV-0858,fill-win,Debian 12,64,Finanzas
+SRV-0859,carry-win,RedHat RHEL 9,128,Desarrollo
+SRV-0860,surface-win,Debian 12,16,Seguridad
+SRV-0861,once-win,Windows Server 2022,16,Operaciones
+SRV-0862,air-win,Windows Server 2022,2,Finanzas
+SRV-0863,officer-win,Ubuntu Server 22.04,64,Desarrollo
+SRV-0864,close-win,RedHat RHEL 9,32,Seguridad
+SRV-0865,thousand-win,Debian 12,8,Seguridad
+SRV-0866,such-win,Ubuntu Server 22.04,4,RRHH
+SRV-0867,personal-win,Windows Server 2019,128,RRHH
+SRV-0868,sport-win,RedHat RHEL 9,4,RRHH
+SRV-0869,yet-win,Debian 12,128,Seguridad
+SRV-0870,protect-win,Windows Server 2019,32,IT
+SRV-0871,recent-win,Windows Server 2019,8,RRHH
+SRV-0872,above-win,Ubuntu Server 22.04,32,IT
+SRV-0873,interest-win,RedHat RHEL 9,4,Desarrollo
+SRV-0874,seat-win,RedHat RHEL 9,8,Desarrollo
+SRV-0875,there-win,Ubuntu Server 22.04,2,Desarrollo
+SRV-0876,claim-win,Debian 12,32,Finanzas
+SRV-0877,discover-win,Windows Server 2022,128,Desarrollo
+SRV-0878,week-win,RedHat RHEL 9,8,Desarrollo
+SRV-0879,reason-win,Debian 12,32,RRHH
+SRV-0880,station-win,Windows Server 2019,64,Desarrollo
+SRV-0881,hand-win,Ubuntu Server 22.04,8,Desarrollo
+SRV-0882,table-win,Debian 12,32,Finanzas
+SRV-0883,couple-win,Ubuntu Server 22.04,64,IT
+SRV-0884,social-win,RedHat RHEL 9,2,Finanzas
+SRV-0885,rate-win,Debian 12,16,Operaciones
+SRV-0886,moment-win,Windows Server 2022,16,IT
+SRV-0887,form-win,Windows Server 2022,4,Desarrollo
+SRV-0888,bag-win,Windows Server 2019,64,Operaciones
+SRV-0889,language-win,RedHat RHEL 9,16,Finanzas
+SRV-0890,coach-win,Windows Server 2019,4,Operaciones
+SRV-0891,much-win,Windows Server 2019,16,RRHH
+SRV-0892,travel-win,RedHat RHEL 9,128,Desarrollo
+SRV-0893,most-win,Windows Server 2019,16,Finanzas
+SRV-0894,next-win,Windows Server 2022,4,Desarrollo
+SRV-0895,box-win,Debian 12,8,IT
+SRV-0896,in-win,Windows Server 2019,16,Seguridad
+SRV-0897,why-win,Windows Server 2022,128,Operaciones
+SRV-0898,case-win,Debian 12,64,RRHH
+SRV-0899,sport-win,RedHat RHEL 9,8,Operaciones
+SRV-0900,together-win,Ubuntu Server 22.04,128,RRHH
+SRV-0901,suddenly-win,Windows Server 2022,4,Finanzas
+SRV-0902,goal-win,Windows Server 2022,8,IT
+SRV-0903,wind-win,Debian 12,8,Desarrollo
+SRV-0904,ever-win,Windows Server 2022,64,Seguridad
+SRV-0905,week-win,Ubuntu Server 22.04,4,Finanzas
+SRV-0906,take-win,RedHat RHEL 9,4,Seguridad
+SRV-0907,doctor-win,RedHat RHEL 9,8,Finanzas
+SRV-0908,this-win,Windows Server 2019,2,Seguridad
+SRV-0909,next-win,Debian 12,64,Desarrollo
+SRV-0910,fire-win,Windows Server 2022,128,Finanzas
+SRV-0911,clearly-win,Windows Server 2022,64,Desarrollo
+SRV-0912,step-win,Debian 12,4,Desarrollo
+SRV-0913,relate-win,RedHat RHEL 9,16,RRHH
+SRV-0914,place-win,Ubuntu Server 22.04,4,RRHH
+SRV-0915,look-win,Ubuntu Server 22.04,32,Finanzas
+SRV-0916,capital-win,Debian 12,32,Operaciones
+SRV-0917,recognize-win,Debian 12,4,Desarrollo
+SRV-0918,billion-win,Debian 12,2,Operaciones
+SRV-0919,edge-win,Windows Server 2022,8,Finanzas
+SRV-0920,season-win,Windows Server 2019,32,Finanzas
+SRV-0921,marriage-win,Ubuntu Server 22.04,128,IT
+SRV-0922,resource-win,Windows Server 2022,16,RRHH
+SRV-0923,by-win,Windows Server 2019,4,IT
+SRV-0924,card-win,RedHat RHEL 9,32,IT
+SRV-0925,seat-win,RedHat RHEL 9,16,IT
+SRV-0926,thus-win,Windows Server 2022,4,Desarrollo
+SRV-0927,choice-win,Ubuntu Server 22.04,64,IT
+SRV-0928,house-win,Debian 12,16,Finanzas
+SRV-0929,hundred-win,RedHat RHEL 9,16,Finanzas
+SRV-0930,computer-win,RedHat RHEL 9,2,Desarrollo
+SRV-0931,always-win,RedHat RHEL 9,32,IT
+SRV-0932,benefit-win,Ubuntu Server 22.04,32,Operaciones
+SRV-0933,foot-win,Windows Server 2022,32,Seguridad
+SRV-0934,stand-win,Debian 12,8,IT
+SRV-0935,and-win,Debian 12,16,IT
+SRV-0936,travel-win,Windows Server 2019,64,Seguridad
+SRV-0937,way-win,Windows Server 2022,8,Desarrollo
+SRV-0938,election-win,Ubuntu Server 22.04,16,Operaciones
+SRV-0939,country-win,RedHat RHEL 9,32,IT
+SRV-0940,science-win,RedHat RHEL 9,2,IT
+SRV-0941,money-win,Windows Server 2022,32,Finanzas
+SRV-0942,such-win,Windows Server 2019,16,Finanzas
+SRV-0943,beyond-win,Windows Server 2019,2,Desarrollo
+SRV-0944,statement-win,Windows Server 2022,64,Seguridad
+SRV-0945,wish-win,Debian 12,2,Operaciones
+SRV-0946,six-win,Windows Server 2022,64,RRHH
+SRV-0947,design-win,Windows Server 2022,2,Operaciones
+SRV-0948,full-win,Windows Server 2022,32,RRHH
+SRV-0949,face-win,RedHat RHEL 9,16,Finanzas
+SRV-0950,seven-win,RedHat RHEL 9,16,Finanzas
+SRV-0951,understand-win,Windows Server 2022,4,RRHH
+SRV-0952,artist-win,Windows Server 2019,64,Operaciones
+SRV-0953,center-win,Debian 12,4,Operaciones
+SRV-0954,positive-win,Debian 12,128,Desarrollo
+SRV-0955,society-win,RedHat RHEL 9,8,Finanzas
+SRV-0956,think-win,Windows Server 2022,32,RRHH
+SRV-0957,price-win,Ubuntu Server 22.04,16,IT
+SRV-0958,sense-win,Ubuntu Server 22.04,32,IT
+SRV-0959,central-win,RedHat RHEL 9,64,IT
+SRV-0960,whether-win,Debian 12,4,Finanzas
+SRV-0961,around-win,Debian 12,8,IT
+SRV-0962,occur-win,Windows Server 2019,2,Seguridad
+SRV-0963,weight-win,RedHat RHEL 9,16,Desarrollo
+SRV-0964,matter-win,RedHat RHEL 9,4,Seguridad
+SRV-0965,college-win,RedHat RHEL 9,4,IT
+SRV-0966,happy-win,Debian 12,32,RRHH
+SRV-0967,economic-win,RedHat RHEL 9,8,Seguridad
+SRV-0968,assume-win,Debian 12,2,RRHH
+SRV-0969,produce-win,Windows Server 2022,2,Seguridad
+SRV-0970,name-win,Windows Server 2019,32,Finanzas
+SRV-0971,trial-win,Windows Server 2019,4,RRHH
+SRV-0972,change-win,RedHat RHEL 9,8,Desarrollo
+SRV-0973,resource-win,Ubuntu Server 22.04,8,Finanzas
+SRV-0974,bed-win,Windows Server 2022,2,Desarrollo
+SRV-0975,garden-win,Windows Server 2022,128,Desarrollo
+SRV-0976,young-win,RedHat RHEL 9,4,Operaciones
+SRV-0977,scene-win,RedHat RHEL 9,64,RRHH
+SRV-0978,between-win,RedHat RHEL 9,2,Finanzas
+SRV-0979,short-win,Windows Server 2019,16,RRHH
+SRV-0980,become-win,Ubuntu Server 22.04,32,Operaciones
+SRV-0981,need-win,Windows Server 2022,128,Seguridad
+SRV-0982,soon-win,Windows Server 2022,8,IT
+SRV-0983,reveal-win,Windows Server 2022,2,RRHH
+SRV-0984,remain-win,Ubuntu Server 22.04,32,IT
+SRV-0985,look-win,Ubuntu Server 22.04,4,IT
+SRV-0986,exactly-win,Debian 12,16,IT
+SRV-0987,arrive-win,Windows Server 2022,128,Desarrollo
+SRV-0988,north-win,Ubuntu Server 22.04,2,RRHH
+SRV-0989,strategy-win,Windows Server 2019,128,IT
+SRV-0990,couple-win,Debian 12,16,Operaciones
+SRV-0991,partner-win,Windows Server 2022,64,RRHH
+SRV-0992,actually-win,Ubuntu Server 22.04,128,IT
+SRV-0993,thus-win,Debian 12,16,Desarrollo
+SRV-0994,inside-win,Ubuntu Server 22.04,64,IT
+SRV-0995,somebody-win,RedHat RHEL 9,4,Finanzas
+SRV-0996,medical-win,Ubuntu Server 22.04,8,RRHH
+SRV-0997,set-win,RedHat RHEL 9,64,Operaciones
+SRV-0998,economic-win,Windows Server 2022,8,Seguridad
+SRV-0999,which-win,Windows Server 2022,32,IT
+SRV-1000,realize-win,Windows Server 2019,4,Operaciones

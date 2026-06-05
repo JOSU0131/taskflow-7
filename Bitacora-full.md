@@ -435,3 +435,43 @@ Salimos del programa con la opción "0" y ejecutamos en la terminal (.venv):
 Para que todo lo que hemos instalado hoy (faker, openpyxl, etc.) quede registrado de forma oficial en el proyecto, ejecuta este comando en tu terminal (.venv):
         PowerShell
         pip freeze > requirements.txt
+
+### Paso 6.3 (Parte A): Crear el generador masivo src/generate_inventory.py
+Este script se encargará exclusivamente de fabricar el archivo bruto de 1,000 servidores con datos aleatorios de departamentos, sistemas operativos y memoria RAM.
+
+    1. Creamos un archivo nuevo en src/ llamado exactamente: generate_inventory.py
+
+    2. En este progamaremos un código limpio de tipado estricto, que genera un archivo CSV con filas de servidores ficticios para la auditoría.
+
+    **NOTA**. 
+        Un archivo CSV (siglas de Comma-Separated Values o Valores Separated por Comas) es el formato más simple que existe para guardar tablas de datos en forma de texto plano.
+
+        Imagina que es una hoja de Excel, pero sin colores, sin fórmulas y sin celdas bonitas. En su lugar:
+            - Cada línea del archivo representa una fila de la tabla.
+            - Cada coma (,) (o a veces punto y coma ;) actúa como la línea divisoria que separa una columna de otra.
+    - - -
+
+### Paso 6.4 (Parte B) y Paso 7: Crear el gestor e informes ejecutivos en Excel "src/inventory_manager.py"
+Este segundo script cargará las 1,000 filas con Pandas, aplicará los filtros de vulnerabilidad (Windows o < 4GB RAM), hará la agrupación por departamentos y guardará el informe ejecutivo mensual en Excel (.xlsx) para cumplir el Paso 7.
+    
+    1. Creamos un archivo nuevo en src/ llamado exactamente: inventory_manager.py
+
+    2. En este progamaremos un código limpio de tipado estricto, para que cargue el inventario, aplique filtros avanzados, agrupe datos y exporte a Excel.
+
+    3. Probamos los dos nuevos scripts
+        Vamos a ejecutarlos en orden desde la terminal (.venv)
+
+        1- Primero, fabricamos las 1,000 filas de datos ficticios:
+        PowerShell
+        python src/generate_inventory.py
+
+        2- Segundo hacemos que el programa haga; procesa, filtra, agrupa y genera el archivo Excel corporativo:
+        PowerShell
+        python src/inventory_manager.py
+
+    3. Control de tipado de MyPy para los nuevos scripts
+    Vamos a verificar que el tipado de los nuevos scripts que usan Pandas y Faker sea 100% correcto para el supervisor. Ejecutamos en la terminal (.venv):
+        PowerShell
+    mypy src/generate_inventory.py src/inventory_manager.py
+    Resultado: 
+    Success: no issues found.

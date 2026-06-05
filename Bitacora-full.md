@@ -378,4 +378,60 @@ La librería Pandas es una herramienta de potencia industrial que nos permitirá
 4. Actualizar el archivo de dependencias final
     Como instalamos requests y pandas, tenemos que asegurarnos de que queden registradas en tu "lista de la compra" oficial del proyecto para que tu profesor pueda instalarlo todo de un solo golpe. Ejecuta este comando:
         PowerShell
-        pip freeze > requirements.txt   
+        pip freeze > requirements.txt 
+    - - -
+
+### Paso 6.2: Instalamos (faker y openpyxl)
+Vamos a instalar las dos herramientas. Una nos permitirá inventar datos (faker) y el motor para crear el archivo Excel (libreria openxl).
+
+    ¿Por qué este?
+        Porque este comando es el más completo. Al añadir pandas-stubs al final, estás instalando:
+
+        1- faker (para inventar los datos aleatorios).
+
+        2- openpyxl (para que Python pueda escribir el archivo de Excel .xlsx).
+
+1. Instalamos las herramientas
+        PowerShell
+        pip install faker openpyxl
+
+2. Actualizamos el "ayudante": data_utils.py
+    Vamos a cambiar el contenido del archivo de datos para que use la fábrica-libreria de datos falsos (Faker) y genere también el archivo Excel.
+
+    En este progamaremos un código que, genera un inventario masivo con Faker, lo procesa con Pandas y lo exporta a formatos CSV y Excel (usando openpyxl de fondo).
+
+3. Paso 3: Volver a probar la opción "6"
+Como no hemos cambiado el nombre de la función ni del archivo, el menú src/sys_toolkit.py funcionará exactamente igual sin tocarle nada.
+
+Guardamos el archivo de datos y arrancamos el programa:
+        PowerShell
+        python src/sys_toolkit.py
+
+    Esperamos:
+    🐼 [Módulo DATA] Iniciando procesador masivo de inventarios con Pandas...
+    =================================================================
+    ✅ ¡Archivos de inventario generados con éxito!
+    📁 CSV:   data/inventario_masivo.csv
+    📁 Excel: data/inventario_masivo.xlsx
+    📊 Resumen del análisis de datos con Pandas & Faker:
+    🏢 Total de dispositivos inventariados: 100 equipos creados aleatoriamente.
+    🧠 Capacidad promedio de memoria RAM: 60.88 GB.
+    🛠️  Desglose por estado de operación:
+        - Activos: 37
+        - En Mantenimiento: 28
+        - Inactivos: 35
+    =================================================================
+
+4. Control de tipado de MyPy:
+Como instalamos pandas-stubs y las nuevas librerías, vamos a comprobar que MyPy nos dé el visto bueno definitivo sin ningún error en todo el proyecto.
+Salimos del programa con la opción "0" y ejecutamos en la terminal (.venv):
+        PowerShell
+        mypy src/data_utils.py src/sys_toolkit.py
+
+    Esperamos:
+    Success: no issues found in 2 source files
+
+5. Actualizar tu lista de dependencias (requirements.txt)
+Para que todo lo que hemos instalado hoy (faker, openpyxl, etc.) quede registrado de forma oficial en el proyecto, ejecuta este comando en tu terminal (.venv):
+        PowerShell
+        pip freeze > requirements.txt

@@ -1,46 +1,56 @@
 import os
 import pandas as pd
+from faker import Faker
 from typing import Tuple
 
-def process_massive_inventory(output_path: str) -> Tuple[bool, str]:
+def process_massive_inventory(output_path_csv: str) -> Tuple[bool, str]:
     """
-    Genera un inventario masivo de dispositivos en un DataFrame de Pandas,
-    lo exporta a un archivo CSV y luego demuestra cómo leerlo y analizarlo.
-    Devuelve:
-    - Un booleano indicando el éxito de la operación.
-    - Un texto con el resumen estadístico de los datos procesados.
+    Genera un inventario masivo con Faker, lo procesa con Pandas
+    y lo exporta a formatos CSV y Excel (usando openpyxl de fondo).
     """
     try:
-        # 1. Creamos un diccionario con datos masivos simulados de servidores y routers
+        # Inicializamos Faker para generar datos aleatorios realistas
+        fake = Faker()
+        
+        # Definimos las rutas para ambos formatos
+        output_path_excel = output_path_csv.replace(".csv", ".xlsx")
+        
+        # 1. Generamos 100 filas de datos 100% realistas usando Faker en un bucle
+        ids = [f"DEV-{i:03d}" for i in range(1, 101)]
+        tipos = [fake.random_element(elements=("Servidor", "Router", "Switch", "Firewall")) for _ in range(100)]
+        rams = [fake.random_element(elements=(8, 16, 32, 64, 128)) for _ in range(100)]
+        estados = [fake.random_element(elements=("Activo", "Mantenimiento", "Inactivo")) for _ in range(100)]
+        
         datos_inventario = {
-            "ID": [f"DEV-{i:03d}" for i in range(1, 101)], # Genera DEV-001 hasta DEV-100 (100 equipos)
-            "Tipo": ["Servidor", "Router", "Switch", "Firewall"] * 25, # Repite los tipos equitativamente
-            "RAM_GB": [16, 32, 64, 128, 8, 4] * 16 + [16, 32, 64, 128], # Simula diferentes capacidades de RAM
-            "Estado": ["Activo", "Activo", "Mantenimiento", "Inactivo"] * 25
+            "ID": ids,
+            "Tipo": tipos,
+            "RAM_GB": rams,
+            "Estado": estados
         }
         
-        # 2. Convertimos el diccionario en un DataFrame (la tabla inteligente de Pandas)
+        # 2. Creamos el DataFrame de Pandas
         df = pd.DataFrame(datos_inventario)
         
-        # Aseguramos que la carpeta contenedora exista antes de guardar el CSV
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        # Aseguramos que la carpeta data/ exista
+        os.makedirs(os.path.dirname(output_path_csv), exist_ok=True)
         
-        # 3. Exportamos toda la tabla a un archivo CSV real sin los índices numéricos
-        df.to_csv(output_path, index=False, encoding="utf-8")
+        # 3. Exportamos a CSV
+        df.to_csv(output_path_csv, index=False, encoding="utf-8")
         
-        # 4. Simulamos que volvemos a importar el archivo CSV para procesarlo (Lectura)
-        df_importado = pd.read_csv(output_path)
+        # 4. Exportamos a Excel (aquí es donde Python usa openpyxl de forma automática por debajo)
+        df.to_excel(output_path_excel, index=False)
         
-        # 5. Hacemos magia analítica con Pandas: calculamos estadísticas rápidas
-        total_equipos = int(df_importado.shape[0]) # Cuenta las filas totales
-        conteo_estados = df_importado["Estado"].value_counts().to_dict() # Cuenta cuántos hay en cada estado
-        promedio_ram = float(df_importado["RAM_GB"].mean()) # Calcula la media de RAM de toda la empresa
+        # 5. Análisis estadístico con Pandas
+        total_equipos = int(df.shape[0])
+        conteo_estados = df["Estado"].value_counts().to_dict()
+        promedio_ram = float(df["RAM_GB"].mean())
         
-        # Construimos el reporte final resumido para mostrar por pantalla
         reporte = (
-            f"✅ ¡Archivo CSV masivo generado con éxito en: {output_path}!\n"
-            f"📊 Resumen del análisis de datos con Pandas:\n"
-            f" 🏢 Total de dispositivos inventariados: {total_equipos} equipos.\n"
+            f"✅ ¡Archivos de inventario generados con éxito!\n"
+            f"   📁 CSV:   {output_path_csv}\n"
+            f"   📁 Excel: {output_path_excel}\n"
+            f"📊 Resumen del análisis de datos con Pandas & Faker:\n"
+            f" 🏢 Total de dispositivos inventariados: {total_equipos} equipos creados aleatoriamente.\n"
             f" 🧠 Capacidad promedio de memoria RAM: {promedio_ram:.2f} GB.\n"
             f" 🛠️  Desglose por estado de operación:\n"
             f"    - Activos: {conteo_estados.get('Activo', 0)}\n"

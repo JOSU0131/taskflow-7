@@ -475,3 +475,77 @@ Este segundo script cargará las 1,000 filas con Pandas, aplicará los filtros d
     mypy src/generate_inventory.py src/inventory_manager.py
     Resultado: 
     Success: no issues found.
+    - - -
+
+## Paso 8: Fiabilidad, Pruebas Unitarias (pytest) y manejo de errores
+En este paso tenemos que asegurar que el kit de herramientas no solo funcione, sino que sea fiable frente a errores y que se pueda automatizar en segundo plano como un servicio del sistema (un demonio).
+
+Este paso pide tres cosas específicas:
+
+    1- Instalar pytest y crear un script de pruebas unitarias para verificar la función que cuenta IPs de los logs.
+
+    2- Añadir control de errores try/except por si falla la red al consultar la geolocalización o si faltan archivos.
+
+    3- Usar la librería schedule para simular que el script corre en segundo plano de forma automática.
+
+### 1: Instalar las librerías necesarias
+    Vamos a descargar las dos herramientas del laboratorio. Ejecuta en tu terminal (.venv).
+        PowerShell
+        pip install pytest schedule
+
+### 2: Crear el laboratorio de pruebas tests/test_toolkit.py
+Contexto:
+Las pruebas unitarias sirven para aislar una función y comprobar que, si le metes unos datos de prueba controlados, devuelve exactamente el resultado esperado. Así nos aseguramos de que nadie rompa el código en el futuro.
+
+    1- En la raíz de tu proyecto, creamos una carpeta nueva llamada tests (ya la tenemos creada).
+    2- Dentro creamos el archivo llamado exactamente: test_toolkit.py
+    3- En este progamaremos un código limpio de tipado estricto, que haga las funciones de nuestro extractor de logs, es decir que verifica que la función parse_ssh_failures procese correctamente líneas de log ficticias y cuente los ataques de IP de forma exacta.
+
+    4- Arrancamos el programa: 
+        PowerShell
+        pytest
+    Salio error
+
+    Al tener un error (con pytest). Lo que ocurre aquí es un comportamiento muy típico de pytest: cuando lo ejecutas a secas, no sabe que la carpeta src/ es un módulo del que debe importar cosas y se pierde al buscarla, lanzando ese ModuleNotFoundError.
+
+    En entornos profesionales, para solucionarlo y decirle a Pytest: "Oye, busca las librerías dentro de la carpeta actual del proyecto", se usa una variable de entorno de Python o un comando directo.
+
+    Pruebamos con comando en la terminal (.venv):
+        PowerShell
+        $env:PYTHONPATH="." ; pytest
+
+    Esperamos: 
+    "1 passed in 0.15s"
+
+    Este 1 passed garantiza que la lógica de filtrado y análisis de seguridad funciona bien.
+
+### 3: Crear el "demonio" de automatización por hora (src/scheduler_daemon.py)
+Contexto: 
+En el mundo de los servidores y la administración de sistemas, un demonio (o daemon en inglés, y a veces llamado servicio en Windows o tarea cron en Linux) es un programa que se ejecuta en segundo plano de forma permanente, sin una interfaz visual y sin necesidad de que un usuario esté sentado dándole a los botones.
+
+La tarea nos pide usar el módulo schedule para simular que nuestro análisis se ejecuta periódicamente (como un demonio o tarea cron de Linux).
+
+    1- Creamos un archivo en src/ llamado exactamente: scheduler_daemon.py
+
+    2- En este progamaremos un código limpio de tipado estricto, que automatiza las tareas de mantenimiento de los pasos anteriores de forma indefinida:
+
+    3- Probar el Demonio
+    Para cerrar la tarea de la automatización por completo, vamos a arrancar el script del demonio en otra terminal (el planificador de tareas en segundo plano).
+
+    **NOTA**
+    Como el demonio se ejecuta mediante un bucle infinito (para poder quedarse siempre escuchando el reloj del sistema y ver cuándo le toca trabajar), Y se va a "quedar con el control" de la terminal donde lo lancemos. Además mientras esté corriendo, no se podrá escribir más comandos en esa ventana a menos que lo detengamos con Ctrl + C.
+
+Lanzamos el demonio. (**NOTA**: en la segunda terminal, y asegúrate de que tiene la burbuja (.venv) activa (si no, la activamos con ".venv\Scripts\Activate.ps1" ).
+        PowerShell
+        python src/scheduler_daemon.py
+
+Esperamos (unos 20 secs):
+Y lo detenemos con "Ctrl + C"
+- - -
+
+## Paso extra 9: Actualizar el requirements.txt  
+Como estuvimos instalando pytest y schedule al final para el Paso 8, asegurarnos de que el archivo de texto tiene anotadas estas librerías es el toque de profesional que dejará el proyecto perfecto.
+    1- Actualizar la lista (requirements.txt):
+        PowerShell
+        pip freeze > requirements.txt
+
